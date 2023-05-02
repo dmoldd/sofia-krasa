@@ -1,0 +1,160 @@
+.actions {
+  margin: 80px 0 0 0;
+}
+
+.actions .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.actions__title {
+  font-weight: 700;
+  font-size: 36px;
+  color: $hero-font-color;
+  width: 50%;
+  margin: 0 0 40px 0;
+}
+.actions__all-items {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  color: $gray;
+  margin: 0 0 0 auto;
+  border-bottom: 1px solid transparent;
+  height: fit-content;
+  
+  svg {
+    margin: 0 0 0 25px;
+    transform: translateY(3px);
+  }
+
+  &:hover {
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.actions__list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions__list-item {
+  border-radius: 4px;
+  position: relative;
+  width: 272px;
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px 8px 8px;
+  box-shadow: $cart-shadow;
+
+  img {
+    margin: 0 0 10px 0;
+  }
+}
+
+.actions__add-to-favorite {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 8px;
+  right: 8px;
+
+  &:hover g path {
+    stroke: red;
+    stroke-width: 5px;
+  }
+}
+
+.actions__sale-count {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  background-color: $sale-count-bg;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: $white;
+  font-size: 16px;
+}
+
+.actions__sale-price {
+  width: 50%;
+  font-weight: 700;
+  font-size: 22px;
+  color: $sale-price-color;
+
+  span {
+      
+  }
+
+  p {  
+    font-size: 17px;
+    margin: 0;
+  }
+}
+
+.actions__normal-price {
+  width: 50%;
+  color: $normal-price-color;
+
+  span {
+    text-align: right;
+    display: block;
+    font-size: 19px;
+  }
+
+  p {
+    text-align: right;
+    opacity: 0.7;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.actions__good-title {
+  color: $sale-price-color;
+  font-weight: 400;
+}
+
+.actions__item-ratio {
+  svg:nth-child(1) path,
+  svg:nth-child(2) path {
+    fill: $orange;
+  }
+}
+
+.actions__add-to-shopping-cart {
+  margin: 8px 0 0 0;
+  width: 100%;
+  color: $catalog-bg;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid $catalog-bg;
+  border-radius: 4px;
+  padding: 8px;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+    border: 1px solid $orange;
+    transition: $transition-fast;
+  }
+}
+
+.actions__list-item:nth-child(2) .actions__item-ratio {
+    svg:nth-child(1) path,
+    svg:nth-child(2) path,
+    svg:nth-child(3) path {
+      fill: $orange;
+    }
+  }
+
+.actions__list-item:nth-child(3) .actions__item-ratio,
+.actions__list-item:nth-child(4) .actions__item-ratio {
+    svg path {
+      fill: $orange;
+    }
+  }

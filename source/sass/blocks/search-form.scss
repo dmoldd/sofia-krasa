@@ -1,0 +1,22 @@
+.search-form {
+  margin: 0 0 0 16px;
+}
+
+.search-form input {
+  min-width: 374px;
+  border-radius: 4px;
+  border: 1px solid $catalog-bg;
+  padding: 10px 42px 10px 16px;
+  background-image: url(../img/svg/search-icon.svg);
+  background-size: 24px 24px;
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+  }
+}

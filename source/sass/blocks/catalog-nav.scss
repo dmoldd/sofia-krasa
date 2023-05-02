@@ -1,0 +1,31 @@
+.catalog-nav {
+  background-color: $catalog-bg;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px 30px 8px 8px;
+  display: flex;
+  margin: 0 0 0 40px;
+  height: fit-content;
+}
+
+.catalog-nav__main-link {
+  margin: 0 0 1px 24px;
+  color: $white;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: $transition-fast;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+    transition: $transition-fast;
+  }
+}
+
+.catalog-nav__open-list {
+  background-image: url(../img/svg/burger-menu.svg);
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+  border: none;
+  outline: none;
+}

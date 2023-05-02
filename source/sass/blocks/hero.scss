@@ -1,0 +1,16 @@
+.hero {
+  background-image: url("./../../img/hero/hero-bg.jpg");
+  margin: 4px 0 0 0;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-weight: 700;
+    font-size: 48px;
+    color: $hero-font-color;
+    margin: 0 0 0 55px;
+  }
+}
