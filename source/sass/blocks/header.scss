@@ -1,68 +1,48 @@
-.header {
+.header { 
   background-color: $white;
-  box-shadow: $header-shadow-down;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header .container {
-  display: flex;
-  padding: 11px 116px;
-  align-items: center;
-}
-
-.header__logo {
-  align-self: center;
-}
-
-.header__my-favorite,
-.header__my-orders,
-.header__my-shopping-cart {
-  margin: 0 0 0 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  svg {
-    width: 24px;
-    height: 24px;
-    margin: 0 0 10px 0;
-    transition: $transition-fast;
-  }
-
-  p {
-    margin: 0;
-    font-size: 16px;
-    transition: $transition-fast;
-  }
-
-  &:hover p,
-  &:hover svg {
-    color: $catalog-bg;
-    stroke: $catalog-bg;
-    transition: $transition-fast;
-  }
-}
-
-.header__my-orders,
-.header__my-shopping-cart {
-  margin: 0 0 0 24px;
-}
-
-.header__user-profile {
+.container {
   display: flex;
   align-items: center;
-  margin: 0 0 0 24px;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-
-  p {
-    margin: 0 0 0 10px;
 }
 
-  svg {
-    margin: 0 0 0 24px;
+.main-nav {
+  margin: 0 0 0 auto;
+  color: $nav-color;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nav__link {
+  margin: 0 0 0 20px;
+  border-bottom: 1px solid transparent;
+  transition: $transition-fast;
+  
+  &:hover {
+    border-bottom: 1px solid $nav-color-hover;
+    transition: $transition-fast;
+    color: $nav-color-hover;
   }
 }
 
+.header__link {
+  background-color: $logo-color;
+  padding: 10px 12px 10px 10px;
+  border-radius: 50%;
+  
+  &:hover {
+    background-color: $logo-color-hover;
+  }
+  
+  &:active {
+    background-color: $logo-color-active;
+  }
+}
+
+.header__link-img {
+}

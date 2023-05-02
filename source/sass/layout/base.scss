@@ -7,13 +7,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  background: url(../img/svg/bg.svg), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
+  background-size: 280px auto, cover;
 }
 
 .container {
   margin: 0 auto;
   height: 100%;
-  width: 1440px;
-  padding: 0 116px;
+  width: 1200px;
+  padding: 0 20px;
 }
 
 img {
@@ -28,7 +30,7 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
 }
 
