@@ -33,16 +33,30 @@
 .header__link {
   background-color: $logo-color;
   padding: 10px 12px 10px 10px;
-  border-radius: 50%;
-  
+  border-radius: 22px;
+  display: flex;
+  transition: $transition-fast;
+
   &:hover {
     background-color: $logo-color-hover;
+    transition: $transition-fast;
   }
-  
+
   &:active {
     background-color: $logo-color-active;
+    transition: $transition-fast;
   }
 }
 
 .header__link-img {
+}
+
+.header__link-text {
+  color: $white;
+  margin: 0 0 0 10px;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
 }
