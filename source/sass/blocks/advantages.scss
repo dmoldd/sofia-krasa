@@ -1,0 +1,22 @@
+.advantages {
+    background-color: $pink;
+}
+
+.advantages .container {
+    position: relative;
+}
+
+.advantages .container svg {
+    margin: 0 0 0 -20px;
+    fill: $body-bg;
+}
+
+.advantages__title {
+  line-height: 150%;
+  font-size: 62px;
+  color: $hero-font-color;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  margin: 0;
+}

@@ -298,7 +298,7 @@ a {
 }
 
 .hero__info-title {
-  margin: 150px 0 0 0;
+  margin: 50px 0 0 0;
   padding: 0 300px 0 0;
   line-height: 150%;
   font-size: 40px;
@@ -349,5 +349,28 @@ a {
 }
 .hero__link-text:hover {
   border-bottom: 1px solid #ffffff;
+}
+
+.advantages {
+  background-color: #ffdbdb;
+}
+
+.advantages .container {
+  position: relative;
+}
+
+.advantages .container svg {
+  margin: 0 0 0 -20px;
+  fill: #FBF8EC;
+}
+
+.advantages__title {
+  line-height: 150%;
+  font-size: 62px;
+  color: #414141;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
