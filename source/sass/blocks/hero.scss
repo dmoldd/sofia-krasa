@@ -1,3 +1,7 @@
+.hero {
+    margin: 20px 0 0 0;
+}
+
 .hero .container {
     display: flex;
 }
@@ -19,9 +23,9 @@
     }
 }
 .hero__text {
+    font-size: 25px;
 }
-.hero__link {
-}
+
 .hero__img {
   width: 450px;
   height: 600px;
@@ -30,4 +34,36 @@
   line-height: 150%;
   text-align: center;
   padding: 68px 0 0 0;
+}
+
+.hero__link {
+  background-color: $logo-color;
+  padding: 10px 12px 10px 10px;
+  border-radius: 22px;
+  display: flex;
+  transition: $transition-fast;
+  width: fit-content;
+
+  &:hover {
+    background-color: $logo-color-hover;
+    transition: $transition-fast;
+  }
+
+  &:active {
+    background-color: $logo-color-active;
+    transition: $transition-fast;
+  }
+}
+
+
+.hero__link-text {
+  color: $white;
+  margin: 0 0 0 10px;
+  border-bottom: 1px solid transparent;
+//   width: fit-content;
+  display: block;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
 }
