@@ -353,6 +353,7 @@ a {
 
 .advantages {
   background-color: #ffdbdb;
+  padding: 0 0 40px 0;
 }
 
 .advantages .container {
@@ -372,5 +373,106 @@ a {
   right: 60px;
   top: 40px;
   margin: 0;
+}
+
+.agvantages__list {
+  padding: 0;
+  margin: 80px 0 0 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30%);
+  justify-content: center;
+  gap: 20px;
+}
+
+.anvantages__item {
+  position: relative;
+  background-color: #FBF8EC;
+  padding: 15px 15px 90px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.anvantages__item:hover {
+  box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
+  transform: scale(105%);
+  transition: all 0.2s ease-in-out;
+}
+.anvantages__item:hover .advantages__item-price {
+  border-bottom: 3px solid #662626;
+  transition: all 0.2s ease-in-out;
+}
+
+.advantages__item-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__item-price {
+  padding: 0 0 10px 0;
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #662626;
+  letter-spacing: 2px;
+  border-bottom: 3px solid transparent;
+  align-self: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.advantages__item-desc {
+  margin: 0;
+  text-align: center;
+}
+
+.advantages__item-order-link {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 30px);
+  text-align: center;
+  border-radius: 4px;
+  border: 3px solid #669EC0;
+  color: #669EC0;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.advantages__item-order-link:hover {
+  background-color: #669EC0;
+  color: #FBF8EC;
+  transition: all 0.2s ease-in-out;
+}
+
+.actions {
+  background-color: #FBF8EC;
+}
+
+.actions .container {
+  position: relative;
+}
+
+.actions .container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #ffdbdb;
+}
+
+.actions__title {
+  margin: 0;
+  line-height: 150%;
+  font-size: 62px;
+  color: #7E7D82;
+  padding: 30px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */

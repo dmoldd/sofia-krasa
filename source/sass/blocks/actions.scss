@@ -1,0 +1,22 @@
+.actions {
+    background-color: $body-bg;
+}
+
+.actions .container {
+    position: relative;
+}
+
+.actions .container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: $pink;
+}
+
+.actions__title {
+    margin: 0;
+    line-height: 150%;
+    font-size: 62px;
+    color: #7E7D82;
+    padding: 30px 0 0 0;
+}
