@@ -382,18 +382,27 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, 30%);
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .anvantages__item {
   position: relative;
   background-color: #FBF8EC;
-  padding: 15px 15px 90px 15px;
+  padding: 255px 15px 90px 15px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 20px;
+}
+.anvantages__item--new::after {
+  content: url(../img/svg/new.svg);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -22px;
+  right: -16px;
 }
 .anvantages__item:hover {
   box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
@@ -403,6 +412,14 @@ a {
 .anvantages__item:hover .advantages__item-price {
   border-bottom: 3px solid #662626;
   transition: all 0.2s ease-in-out;
+}
+
+.advantages__item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .advantages__item-title {
@@ -459,6 +476,7 @@ a {
 
 .actions .container {
   position: relative;
+  padding: 0 60px;
 }
 
 .actions .container svg {
