@@ -1,0 +1,120 @@
+.services {
+    background-color: $pink;
+    padding: 0 0 40px 0;
+}
+
+.services .container {
+    position: relative;
+}
+
+.services .container svg {
+    margin: 0 0 0 -20px;
+    fill: $body-bg;
+}
+
+.services__title {
+  line-height: 150%;
+  font-size: 62px;
+  color: $hero-font-color;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  margin: 0;
+}
+
+.services__list {
+    padding: 30px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30%);
+    justify-content: center;
+    gap: 50px;
+}
+.services__item {
+    position: relative;
+    background-color: $body-bg;
+    padding: 255px 15px 90px 15px;
+    border-radius: 8px;
+    transition: $transition-fast;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+  &--new::after {
+    content: url(../img/svg/new.svg);
+    // background-image: url(../img/svg/new.svg);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -22px;
+    right: -16px;
+  }
+    
+    &:hover {
+        box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
+        transform: scale(105%);
+        transition: $transition-fast;
+    }
+    
+    &:hover .services__item-price {
+        border-bottom: 3px solid $nav-color; 
+        transition: $transition-fast;
+    }
+}
+
+.services__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+.services__item-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.services__item-price {
+    padding: 0 0 10px 0;
+    margin: 0;
+    width: fit-content;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $nav-color;
+    letter-spacing: 2px;
+    border-bottom: 3px solid transparent;
+    align-self: center;
+    transition: $transition-fast;
+}
+.services__item-desc {
+    margin: 0;
+    text-align: center;
+}
+
+.services__item-order-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 30px);
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid $logo-color-hover;
+    color: $logo-color-hover;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: $transition-fast;
+    
+    &:hover {
+        background-color: $logo-color-hover;
+        color: $body-bg;
+        transition: $transition-fast;
+
+    }
+}
