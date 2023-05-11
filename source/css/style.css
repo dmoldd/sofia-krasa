@@ -232,31 +232,6 @@ a {
   margin: 0 20px;
 }
 
-.main-nav {
-  margin: 0 20px 0 0;
-  color: #662626;
-}
-
-.main-nav__list {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-}
-
-.main-nav__link {
-  margin: 0 0 0 20px;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-.main-nav__link:hover {
-  border-bottom: 1px solid #c48a8a;
-  transition: all 0.2s ease-in-out;
-  color: #c48a8a;
-}
-.main-nav__link:first-child {
-  margin: 0;
-}
-
 .header__link {
   background-color: #3a6883;
   padding: 10px 12px 10px 10px;
@@ -280,6 +255,31 @@ a {
 }
 .header__link-text:hover {
   border-bottom: 1px solid #ffffff;
+}
+
+.main-nav {
+  margin: 0 20px 0 0;
+  color: #662626;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.main-nav__link {
+  margin: 0 0 0 20px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.main-nav__link:hover {
+  border-bottom: 1px solid #c48a8a;
+  transition: all 0.2s ease-in-out;
+  color: #c48a8a;
+}
+.main-nav__link:first-child {
+  margin: 0;
 }
 
 .hero {
@@ -371,6 +371,87 @@ a {
   left: 0;
   bottom: -5px;
   z-index: 2;
+}
+
+.footer {
+  box-shadow: 0 -7px 11px -8px rgba(34, 60, 80, 0.6);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-networks {
+  list-style-type: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 0;
+}
+.footer__social-networks li {
+  margin: 0 0 0 30px;
+  transition: all 0.2s ease-in-out;
+}
+.footer__social-networks li:hover {
+  box-shadow: 0 5px 19px 5px rgba(34, 60, 80, 0.2);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-5px);
+}
+.footer__social-networks li:first-child {
+  margin: 0;
+}
+
+.footer__social-networks-vk {
+  width: 50px;
+  height: 50px;
+}
+.footer__social-networks-vk .cls-1 {
+  fill: #07f;
+}
+.footer__social-networks-vk .cls-2 {
+  fill: #fff;
+}
+
+.footer__social-networks-inst {
+  width: 50px;
+  height: 50px;
+}
+.footer__social-networks-inst .cls-1 {
+  fill: url(#Inst);
+}
+.footer__social-networks-inst .cls-2 {
+  fill: #fff;
+  fill-rule: evenodd;
+}
+
+.footer__social-networks-tg {
+  width: 50px;
+  height: 50px;
+}
+.footer__social-networks-tg .cls-1 {
+  fill: url(#tg);
+}
+.footer__social-networks-tg .cls-2 {
+  fill: #fff;
+  fill-rule: evenodd;
+}
+
+.footer__social-networks-watsapp {
+  width: 50px;
+  height: 50px;
+}
+.footer__social-networks-watsapp .cls-1 {
+  fill: #25d366;
+}
+.footer__social-networks-watsapp .cls-2 {
+  fill: #fff;
+  fill-rule: evenodd;
+}
+.footer__social-networks-watsapp .cls-3 {
+  fill: #fff;
+  fill-rule: evenodd;
 }
 
 .services {
@@ -536,15 +617,24 @@ a {
   list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
 }
 
-.advantages__item {
+.advantages__card {
+  position: relative;
+  list-style-type: none;
   padding: 20px;
   width: 263px;
-  background-color: #ffffff;
+  height: 390px;
+}
+
+.advantages__item {
   border-radius: 8px;
+  background-color: #ffffff;
+  width: 263px;
+  height: 390px;
+  padding: 20px;
 }
 
 .advantages__item-title {
@@ -552,7 +642,62 @@ a {
   margin: 0;
 }
 
-.advantages__item-text {
-  margin: 15px 0 0 20px;
+.advantages__item--front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.advantages__img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.advantages__see-more {
+  color: #669EC0;
+  width: calc(100% - 40px);
+  border: 3px solid #669EC0;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.advantages__see-more:hover {
+  background-color: #669EC0;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.advantages__item--back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.advantages__item--front,
+.advantages__item--back {
+  backface-visibility: hidden;
+  transition: transform 0.6s linear;
+}
+
+.advantages__text {
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+.advantages__text:first-child {
+  margin: 0;
+}
+
+.advantages__card:hover > .advantages__item--front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.advantages__card:hover > .advantages__item--back {
+  transform: perspective(600px) rotateY(0deg);
 }
 /*# sourceMappingURL=style.css.map */

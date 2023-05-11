@@ -1,0 +1,26 @@
+.main-nav {
+  margin: 0 20px 0 0;
+  color: $nav-color;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.main-nav__link {
+  margin: 0 0 0 20px;
+  border-bottom: 1px solid transparent;
+  transition: $transition-fast;
+  
+  &:hover {
+    border-bottom: 1px solid $nav-color-hover;
+    transition: $transition-fast;
+    color: $nav-color-hover;
+  }
+
+  &:first-child {
+    margin: 0;
+  }
+}
