@@ -455,7 +455,7 @@ a {
 }
 
 .services {
-  background-color: #ffdbdb;
+  background-color: #FBF8EC;
   padding: 0 0 40px 0;
 }
 
@@ -472,10 +472,10 @@ a {
   line-height: 150%;
   font-size: 62px;
   color: #414141;
-  position: absolute;
   right: 60px;
   top: 40px;
   margin: 0;
+  text-align: right;
 }
 
 .services__list {
@@ -483,7 +483,7 @@ a {
   margin: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-columns: repeat(auto-fit, 20%);
   justify-content: center;
   gap: 50px;
 }
@@ -491,15 +491,49 @@ a {
 .services__item {
   position: relative;
   background-color: #FBF8EC;
-  padding: 255px 15px 90px 15px;
+  padding: 178px 14px 73px 15px;
   border-radius: 8px;
+  border: 2px solid #662626;
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
+}
+.services__item--pack {
+  grid-column: 1/5;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+}
+.services__item--pack .services__item-inner {
+  width: 30%;
+  margin: 0 0 0 35%;
+}
+.services__item--pack .services__item-inner2 {
+  width: 30%;
+}
+.services__item--pack .services__item-img {
+  top: 0;
+  left: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 100%;
+  width: auto;
+}
+.services__item--pack .services__inner-text {
+  text-align: center;
+}
+.services__item--pack .services__item-price {
+  text-align: center;
+  margin: 0 auto;
+}
+.services__item--pack .services__item-order-link {
+  position: static;
+  display: block;
+  width: 100%;
 }
 .services__item--new::after {
-  content: url(../img/svg/new.svg);
+  content: url("../img/svg/new.svg");
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
@@ -508,7 +542,7 @@ a {
   right: -16px;
 }
 .services__item:hover {
-  box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 35px 0 rgba(34, 60, 80, 0.2);
   transform: scale(105%);
   transition: all 0.2s ease-in-out;
 }
@@ -601,6 +635,8 @@ a {
   background-color: #ffdbdb;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding: 0 20px 100px 20px;
 }
 
 .advantages__title {
@@ -699,5 +735,13 @@ a {
 
 .advantages__card:hover > .advantages__item--back {
   transform: perspective(600px) rotateY(0deg);
+}
+
+.advantages__border-triangle {
+  fill: #FBF8EC;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */
