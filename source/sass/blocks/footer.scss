@@ -1,9 +1,20 @@
 .footer { 
-  box-shadow: 0 -7px 11px -8px rgba(34, 60, 80, 0.6);
+  // box-shadow: 0 -7px 11px -8px rgba(34, 60, 80, 0.6);
+  background-color: $pink;
+  position: relative;
+  padding: 0 0 20px 0;
+}
+
+.footer__border-top {
+  // width: 105%;
+  fill: $pink;
+  position: absolute;
+  top: -60px;
 }
 
 .footer .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }  
