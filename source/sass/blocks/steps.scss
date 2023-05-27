@@ -1,6 +1,6 @@
 .steps {
   background-color: rgb(147, 188, 180);
-  padding: 0 0 50px 0;
+  // padding: 0 0 50px 0;
 }
 
 .container {
@@ -89,4 +89,10 @@
 .steps__item-title {
   font-size: 30px;
   transition: $transition-slow;
+}
+
+.steps__border-triangle {
+  margin: 0px 0px -70px -20px;
+  fill: rgb(147, 188, 180);
+
 }
