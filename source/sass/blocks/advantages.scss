@@ -2,7 +2,7 @@
 }
 
 .advantages .container {
-  background-color: $pink;
+  background-color: hsl(0,0%,90%);
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -13,7 +13,7 @@
   width: 100%;
   line-height: 150%;
   font-size: 62px;
-  color: #414141;
+  color: #497970;
   right: 60px;
   top: 40px;
   margin: 0;
@@ -110,7 +110,7 @@
 }
 
 .advantages__border-triangle {
-  fill: #FBF8EC;
+  fill: rgb(147, 188, 180);
   position: absolute;
   left: 0;
   bottom: -5px;

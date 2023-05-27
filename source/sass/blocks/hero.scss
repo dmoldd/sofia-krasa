@@ -4,6 +4,7 @@
 
 .hero {
   margin: 20px 0 0 0;
+  background-color: #497970;
 }
 
 .hero .container {
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  max-width: 65%;
+  width: 50%;
   text-align: right;
   padding: 0 30px 0 0;
   z-index: 1;
@@ -24,21 +25,29 @@
 .hero__info-title {
   margin: 20px 0 0 0;
   line-height: 150%;
-  font-size: 54px;
-  color: $hero-font-color;
+  color: rgb(147, 188, 180);
   // -webkit-text-stroke: 1px $gray;
   // text-transform: uppercase;
   // color: $pink;
-  color: #a88b88;
+  font-size: 54px;
+}
 
+.hero__info-desc {
+  color: #dfdfdf;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 10px 0;
+  
 }
 
 .hero__text {
-  font-size: 22px;
-  color: #4d4846;
+  font-size: 28px;
+  color: #dfdfdf;
+  line-height: 1.2;
 
   a {
-    color: #993838;
+    color: #ffffff;
     border-bottom: 1px solid #993838;
     transition: $transition-slow;
   }
@@ -51,8 +60,9 @@
 }
 
 .hero__img {
-  width: 450px;
-  height: 544px;
+  margin: 0 0 0 -20px;
+  width: 50%;
+  // height: 544px;
   position: relative;
   overflow: visible;
 
@@ -61,38 +71,31 @@
     z-index: 1;
   }
 
-  &-background {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    stroke-width: 5px;
+  // &-background {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: auto;
+  //   stroke-width: 5px;
 
-    path {
-      stroke-width: 50px;
-      stroke: $pink;
-    }
-  }
+  //   path {
+  //     stroke-width: 50px;
+  //     stroke: $pink;
+  //   }
+  // }
 }
 
 .hero__link {
-  background-color: $logo-color;
+  color: #dfdfdf;
+  border: 2px solid #dfdfdf;
   padding: 10px 12px 10px 10px;
-  border-radius: 22px;
   display: flex;
   transition: $transition-fast;
   width: fit-content;
-
-  &:hover {
-    background-color: $logo-color-hover;
-    transition: $transition-fast;
-  }
-
-  &:active {
-    background-color: $logo-color-active;
-    transition: $transition-fast;
-  }
+  text-transform: uppercase;
+  font-size: 25px;
+  align-self: flex-end;
 }
 
 
@@ -108,7 +111,7 @@
 }
 
 .hero__border-triangle {
-  fill: $pink;
+  fill: hsl(0deg, 0%, 90%);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -117,9 +120,9 @@
 
 .hero__background {
   position: absolute;
-  width: 75%;
-  transform: rotate(4deg);
-  bottom: 1px;
-  right: 0;
+  width: 91%;
+  transform: rotate(90deg);
+  bottom: 231px;
+  right: -197px;
   z-index: 0;
 }
