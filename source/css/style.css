@@ -344,6 +344,7 @@ a {
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease-in-out;
   position: relative;
+  display: flex;
 }
 .main-nav__link:hover {
   border-bottom: 1px solid #c48a8a;
@@ -366,6 +367,75 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   align-self: flex-end;
+}
+
+.main-nav__hover-logo {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 10px 0 0;
+  transform: rotate(0deg) translateY(3px);
+  transition: all 1s;
+}
+.main-nav__hover-logo span:first-child {
+  display: block;
+  height: 3px;
+  background-color: white;
+  width: 100%;
+  transition: all 0.5s;
+}
+.main-nav__hover-logo span:nth-child(2) {
+  width: 66%;
+  display: block;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.main-nav__hover-logo span:last-child {
+  width: 33%;
+  display: block;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.main-nav__link:hover .main-nav__hover-logo {
+  transform: rotate(450deg);
+  transition: all 1s;
+}
+.main-nav__link:hover .main-nav__hover-logo span:first-child {
+  display: block;
+  height: 3px;
+  background-color: white;
+  width: 50%;
+  transition: all 0.5s;
+  transform: rotate(45deg);
+  top: -3px;
+  position: absolute;
+  right: 0;
+}
+.main-nav__link:hover .main-nav__hover-logo span:nth-child(2) {
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s;
+  position: absolute;
+  align-self: center;
+}
+.main-nav__link:hover .main-nav__hover-logo span:last-child {
+  width: 50%;
+  display: block;
+  height: 3px;
+  background-color: white;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+  position: absolute;
+  top: 3px;
+  right: 0;
 }
 
 .hero {

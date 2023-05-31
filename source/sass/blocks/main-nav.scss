@@ -32,6 +32,7 @@
   border-bottom: 1px solid transparent;
   transition: $transition-fast;
   position: relative;
+  display: flex;
   
   &:hover {
     border-bottom: 1px solid $nav-color-hover;
@@ -55,4 +56,82 @@
   margin: 10px 10px 10px 0;
   width: fit-content;
   align-self: flex-end;
+}
+
+.main-nav__hover-logo {
+  // background-color: red;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 10px 0 0;
+  transform: rotate(0deg) translateY(3px);
+  transition: all 1s;
+  
+  span:first-child {
+    display: block;
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  span:nth-child(2) {
+    width: 66%;
+    display: block;
+    height: 3px;
+    background-color: white;
+    // align-self: flex-end;
+    transition: all 0.5s;
+  }
+  
+  span:last-child {
+    width: 33%;
+    display: block;
+    height: 3px;
+    background-color: white;
+    transition: all 0.5s;
+  }
+}
+
+.main-nav__link:hover .main-nav__hover-logo {
+  transform: rotate(450deg);
+  transition: all 1s;
+  
+  span:first-child {
+    display: block;
+    height: 3px;
+    background-color: white;
+    width: 50%;
+    transition: all 0.5s;
+    transform: rotate(45deg);
+    top: -3px;
+    position: absolute;
+    right: 0;
+  }
+  
+  span:nth-child(2) {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: white;
+    // align-self: flex-end;
+    transition: all 0.5s;
+    position: absolute;
+    align-self: center;
+  }
+  
+  span:last-child {
+    width: 50%;
+    display: block;
+    height: 3px;
+    background-color: white;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
 }
