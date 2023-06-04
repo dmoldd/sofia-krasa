@@ -222,6 +222,7 @@ a {
   position: fixed;
   width: inherit;
   z-index: 3;
+  height: 93px;
 }
 
 .header .container {
@@ -231,6 +232,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  position: relative;
 }
 
 .header__link {
@@ -258,11 +260,22 @@ a {
   border-bottom: 1px solid #ffffff;
 }
 
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header__social-networks {
   list-style-type: none;
   padding: 0;
   display: flex;
   margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header__social-networks-vk {
@@ -280,7 +293,7 @@ a {
 .header__social-networks-inst {
   width: 30px;
   height: 30px;
-  margin: 0 10px 0 0;
+  margin: 0 110px 0 0;
 }
 .header__social-networks-inst g circle {
   fill: transparent;
@@ -292,7 +305,7 @@ a {
 .header__social-networks-tg {
   width: 30px;
   height: 30px;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 110px;
 }
 .header__social-networks-tg g circle {
   fill: transparent;
@@ -315,12 +328,16 @@ a {
 .main-nav {
   margin: 0;
   color: #fff;
+  position: relative;
+  width: 100%;
 }
 
 .main-nav__list {
   list-style-type: none;
   display: flex;
   padding: 0;
+  width: 100%;
+  justify-content: space-between;
 }
 .main-nav__list--droped {
   position: absolute;
@@ -400,6 +417,11 @@ a {
   height: 3px;
   background-color: white;
   transition: all 0.5s;
+}
+
+.main-nav__link:last-child .main-nav__hover-logo {
+  transform: scale(-1, 1);
+  margin: 0 0 0 5px;
 }
 
 .main-nav__link:hover .main-nav__hover-logo {

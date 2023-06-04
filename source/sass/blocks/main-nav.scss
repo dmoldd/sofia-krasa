@@ -1,12 +1,16 @@
 .main-nav {
   margin: 0;
   color: #fff;
+  position: relative;
+  width: 100%;
 }
 
 .main-nav__list {
   list-style-type: none;
   display: flex;
   padding: 0;
+  width: 100%;
+  justify-content: space-between;
 
   &--droped {
     position: absolute;
@@ -69,7 +73,7 @@
   margin: 0 10px 0 0;
   transform: rotate(0deg) translateY(3px);
   transition: all 1s;
-  
+
   span:first-child {
     display: block;
     height: 3px;
@@ -94,6 +98,11 @@
     background-color: white;
     transition: all 0.5s;
   }
+}
+
+.main-nav__link:last-child .main-nav__hover-logo {
+  transform: scale(-1, 1);
+  margin: 0 0 0 5px;
 }
 
 .main-nav__link:hover .main-nav__hover-logo {
