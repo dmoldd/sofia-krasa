@@ -1,6 +1,10 @@
 .services {
-  background-color: #FBF8EC;
+  background-color: hsl(0deg, 0%, 90%);
   padding: 0 0 100px 0;
+}
+
+.services__border-top {
+  fill: rgb(147, 188, 180);
 }
 
 .services .container {
@@ -18,8 +22,9 @@
   color: $hero-font-color;
   right: 60px;
   top: 40px;
-  margin: 0;
-  text-align: right;
+  margin: 20px 0 0 0;
+  text-align: center;
+  // text-transform: capitaliz;
 }
 
 .services__list {
@@ -56,7 +61,7 @@
   background-color: #FBF8EC;
   padding: 178px 14px 73px 15px;
   border-radius: 8px;
-  border: 2px solid #662626;
+  // border: 2px solid #662626;
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;

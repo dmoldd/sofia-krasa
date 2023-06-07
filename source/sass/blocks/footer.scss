@@ -1,13 +1,19 @@
 .footer { 
   // box-shadow: 0 -7px 11px -8px rgba(34, 60, 80, 0.6);
-  background-color: $pink;
+  background-color: #84BCB1;
+  // background-color: #497970;;
+  // background-color: #1A7F72;
   position: relative;
   padding: 0 0 20px 0;
+  // background-image: url("./../../img/svg/footer-bg.svg");
+  // background-position: bottom center;
+  // background-repeat: repeat-x;
+  // background-size: 100px 100px;
 }
 
 .footer__border-top {
   // width: 105%;
-  fill: $pink;
+  fill: #84BCB1;
   position: absolute;
   top: -60px;
 }
