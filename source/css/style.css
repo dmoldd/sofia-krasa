@@ -413,13 +413,13 @@ a {
 
 .main-nav__hover-logo {
   width: 15px;
-  height: 15px;
+  height: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 10px 0 0;
-  transform: rotate(0deg) translateY(3px);
+  transform: rotate(0deg) translateY(5px);
   transition: all 1s;
 }
 .main-nav__hover-logo span:first-child {
@@ -460,7 +460,7 @@ a {
   width: 50%;
   transition: all 0.5s;
   transform: rotate(45deg);
-  top: -3px;
+  top: -2px;
   position: absolute;
   right: 0;
 }
@@ -481,7 +481,7 @@ a {
   transform: rotate(-45deg);
   transition: all 0.5s;
   position: absolute;
-  top: 3px;
+  top: 2px;
   right: 0;
 }
 
@@ -1070,5 +1070,62 @@ a {
 .steps__item-title {
   font-size: 30px;
   transition: all 0.5s ease-in-out;
+}
+
+.faq {
+  padding: 0 0 100px 0;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.faq__list {
+  width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.faq__question {
+  margin: 0 0 15px 0;
+}
+
+.faq__question-title {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 15px 15px 40px;
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.faq__question-title:after {
+  content: "+";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+button.faq__question-title.is-opened::after {
+  content: "-";
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq__answer p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

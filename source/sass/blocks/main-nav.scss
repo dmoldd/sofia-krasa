@@ -103,13 +103,13 @@
 .main-nav__hover-logo {
   // background-color: red;
   width: 15px;
-  height: 15px;
+  height: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 10px 0 0;
-  transform: rotate(0deg) translateY(3px);
+  transform: rotate(0deg) translateY(5px);
   transition: all 1s;
 
   span:first-child {
@@ -154,7 +154,7 @@
     width: 50%;
     transition: all 0.5s;
     transform: rotate(45deg);
-    top: -3px;
+    top: -2px;
     position: absolute;
     right: 0;
   }
@@ -178,7 +178,7 @@
     transform: rotate(-45deg);
     transition: all 0.5s;
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: 0;
   }
 }
