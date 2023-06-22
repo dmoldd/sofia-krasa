@@ -157,6 +157,18 @@ button:active, button:focus {
 
 /* colors */
 /* vars */
+/* keyframes */
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -278,6 +290,9 @@ a {
 .header__social-networks-vk g path {
   fill: #fff;
 }
+.header__social-networks-vk:hover g path {
+  fill: hsl(0deg, 0%, 90%);
+}
 
 .header__social-networks-inst {
   width: 30px;
@@ -289,6 +304,9 @@ a {
 }
 .header__social-networks-inst g path {
   fill: #fff;
+}
+.header__social-networks-inst:hover g path {
+  fill: hsl(0deg, 0%, 90%);
 }
 
 .header__social-networks-tg {
@@ -302,6 +320,9 @@ a {
 .header__social-networks-tg g path {
   fill: #fff;
 }
+.header__social-networks-tg:hover g path {
+  fill: hsl(0deg, 0%, 90%);
+}
 
 .header__social-networks-watsapp {
   width: 30px;
@@ -312,6 +333,9 @@ a {
 }
 .header__social-networks-watsapp g path {
   fill: #fff;
+}
+.header__social-networks-watsapp:hover g path {
+  fill: hsl(0deg, 0%, 90%);
 }
 
 .main-nav {
@@ -355,6 +379,7 @@ a {
 }
 .main-nav__link:hover {
   transition: all 0.2s ease-in-out;
+  color: hsl(0deg, 0%, 90%);
 }
 .main-nav__link:first-child {
   margin: 0;
@@ -364,7 +389,7 @@ a {
   width: 20px;
   height: 20px;
   position: relative;
-  margin: 0 0 0 10px;
+  margin: 0 15px 0 10px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -378,6 +403,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 2px;
+  transition: all 0.2s ease-in-out;
 }
 
 .main-nav__link-icon span:last-child {
@@ -390,6 +416,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
 }
 
 .main-nav__link:hover > .main-nav__list--droped {
@@ -403,14 +430,16 @@ a {
   transform: rotate(90deg);
   transition: all 0.2s ease-in-out;
 }
-
-.main-nav__list--droped .main-nav__link {
-  margin: 10px 10px 10px 0;
-  width: -moz-fit-content;
-  width: fit-content;
-  align-self: flex-end;
+.main-nav__list--droped .main-nav__link:hover .main-nav__link-icon span {
+  background-color: hsl(0deg, 0%, 90%);
+  transition: all 0.2s ease-in-out;
 }
 
+.main-nav__list--droped .main-nav__link {
+  margin: 0 10px 0 0;
+  width: 100%;
+  padding: 10px 0;
+}
 .main-nav__hover-logo {
   width: 15px;
   height: 13px;
@@ -453,10 +482,12 @@ a {
   transform: rotate(450deg);
   transition: all 1s;
 }
+.main-nav__link:hover .main-nav__hover-logo span {
+  background-color: hsl(0deg, 0%, 90%);
+}
 .main-nav__link:hover .main-nav__hover-logo span:first-child {
   display: block;
   height: 3px;
-  background-color: white;
   width: 50%;
   transition: all 0.5s;
   transform: rotate(45deg);
@@ -468,7 +499,6 @@ a {
   width: 100%;
   display: block;
   height: 3px;
-  background-color: white;
   transition: all 0.5s;
   position: absolute;
   align-self: center;
@@ -477,7 +507,6 @@ a {
   width: 50%;
   display: block;
   height: 3px;
-  background-color: white;
   transform: rotate(-45deg);
   transition: all 0.5s;
   position: absolute;
@@ -556,7 +585,6 @@ a {
 
 .hero__link {
   color: #dfdfdf;
-  border: 2px solid #dfdfdf;
   padding: 10px 12px 10px 10px;
   display: flex;
   transition: all 0.2s ease-in-out;
@@ -565,6 +593,34 @@ a {
   text-transform: uppercase;
   font-size: 25px;
   align-self: flex-end;
+  position: relative;
+  background-color: #7d46b5;
+  border-radius: 5px;
+}
+.hero__link:hover {
+  background: none;
+}
+
+.hero__link:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.hero__link:hover > .hero__link:before {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
 }
 
 .hero__link-text {

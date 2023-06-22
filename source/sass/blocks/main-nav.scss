@@ -42,7 +42,7 @@
   &:hover {
     // border-bottom: 1px solid $nav-color-hover;
     transition: $transition-fast;
-    // color: $nav-color-hover;
+    color: hsl(0deg, 0%, 90%);
   }
 
   &:first-child {
@@ -54,7 +54,7 @@
   width: 20px;
   height: 20px;
   position: relative;
-  margin: 0 0 0 10px;
+  margin: 0 15px 0 10px;
   transition: $transition-fast;
 }
 
@@ -68,6 +68,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 2px;
+  transition: $transition-fast;
 }
 
 .main-nav__link-icon span:last-child {
@@ -80,6 +81,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: $transition-fast;
 }
 
 .main-nav__link:hover > .main-nav__list--droped {
@@ -92,12 +94,21 @@
 .main-nav__list--droped .main-nav__link:hover .main-nav__link-icon {
   transform: rotate(90deg);
   transition: $transition-fast;
+  
+  span {
+    background-color: hsl(0deg, 0%, 90%);
+    transition: $transition-fast;
+  }
 }
 
 .main-nav__list--droped .main-nav__link {
-  margin: 10px 10px 10px 0;
-  width: fit-content;
-  align-self: flex-end;
+  margin: 0 10px 0 0;
+  width: 100%;
+  padding: 10px 0;
+
+  a {
+    // margin: 0 0 0 auto;
+  }
 }
 
 .main-nav__hover-logo {
@@ -146,11 +157,15 @@
 .main-nav__link:hover .main-nav__hover-logo {
   transform: rotate(450deg);
   transition: all 1s;
+
+  span {
+    background-color: hsl(0deg, 0%, 90%);
+  }
   
   span:first-child {
     display: block;
     height: 3px;
-    background-color: white;
+
     width: 50%;
     transition: all 0.5s;
     transform: rotate(45deg);
@@ -163,7 +178,6 @@
     width: 100%;
     display: block;
     height: 3px;
-    background-color: white;
     // align-self: flex-end;
     transition: all 0.5s;
     position: absolute;
@@ -174,7 +188,6 @@
     width: 50%;
     display: block;
     height: 3px;
-    background-color: white;
     transform: rotate(-45deg);
     transition: all 0.5s;
     position: absolute;
