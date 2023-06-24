@@ -1,0 +1,76 @@
+.sidebar {
+  position: fixed;
+  // z-index: 999;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.sidebar__social-networks {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.sidebar__social-networks li {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 10px 0;
+  transition: $transition-fast;
+}
+
+
+.sidebar__social-networks li:hover {
+  transition: $transition-fast;
+  transform: translateX(-5px);
+}
+
+.sidebar__social-networks-vk {
+
+  .cls-1 {
+    fill:#07f;
+  }
+
+  .cls-2 {
+    fill: #fff;
+  }
+}
+
+.sidebar__social-networks-inst {
+
+  .cls-1 {
+    fill:url(#Inst);
+  }
+
+  .cls-2 {
+    fill:#fff;
+    fill-rule: evenodd;
+  }
+}
+
+.sidebar__social-networks-tg {
+
+  .cls-1{
+    fill:url(#tg);
+  }
+
+  .cls-2{
+    fill:#fff;fill-rule:evenodd;
+  }
+}
+
+.sidebar__social-networks-watsapp {
+
+  .cls-1 {
+    fill:#25d366;
+  }
+
+  .cls-2 {
+    fill:#fff;
+    fill-rule:evenodd;
+  }
+
+  .cls-3 {
+    fill:#fff;
+    fill-rule:evenodd;
+  }
+}

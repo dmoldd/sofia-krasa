@@ -35,6 +35,10 @@
   transition: $transition-fast;
 }
 
+.faq__question-title:hover {
+  cursor: pointer;
+}
+
 .faq__question-title:after {
   content: "+";
   position: absolute;
@@ -53,5 +57,6 @@ button.faq__question-title.is-opened::after {
 }
 
 .faq__answer p {
-  margin: 0;
+  margin: 10px 0 0 50px;
+  padding: 0 10px 0 0;
 }

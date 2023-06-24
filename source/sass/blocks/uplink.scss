@@ -1,0 +1,48 @@
+.up-link {
+  height: 50px;
+  width: 50px;
+  background-color: #84BCB1;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 10px;
+  transition: $transition-fast;
+}
+
+.up-link:hover {
+  margin: 0 0 5px 0;
+  transition: $transition-fast;
+}
+
+.up-link span:first-child {
+  display: block;
+  background-color: hsl(0deg, 0%, 90%);
+  height: 60%;
+  width: 7px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+}
+
+.up-link span:nth-child(2) {
+  display: block;
+  background-color: hsl(0deg, 0%, 90%);
+  height: 40%;
+  width: 7px;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.up-link span:last-child {
+  display: block;
+  background-color: hsl(0deg, 0%, 90%);
+  height: 40%;
+  width: 7px;
+  position: absolute;
+  right: 27%;
+  top: 10%;
+  transform: translate(-50%, 0) rotate(-45deg);
+}

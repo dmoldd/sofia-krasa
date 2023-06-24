@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     transition: transform .3s;
-    right: 0;
+    right: -20px;
     top: 25px;
     border-top: 30px solid #84BCB1;
     background-color: #84BCB1;
@@ -104,11 +104,19 @@
 .main-nav__list--droped .main-nav__link {
   margin: 0 10px 0 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 0;
 
   a {
-    // margin: 0 0 0 auto;
+    width: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: flex-end;
+    border-top: 1px solid #D6D7D6;
   }
+}
+
+.main-nav__list--droped .main-nav__link:first-child a {
+  border-top: none;
 }
 
 .main-nav__hover-logo {
