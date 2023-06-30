@@ -27,7 +27,6 @@
 .faq__question-title {
   border: none;
   outline: none;
-  // background-color: inherit;
   width: 100%;
   padding: 15px 15px 15px 40px;
   text-align: left;
@@ -39,7 +38,7 @@
   cursor: pointer;
 }
 
-.faq__question-title:after {
+.faq__question-title::after {
   content: "+";
   position: absolute;
   top: 15px;

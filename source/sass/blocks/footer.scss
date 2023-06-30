@@ -1,18 +1,10 @@
 .footer { 
-  // box-shadow: 0 -7px 11px -8px rgba(34, 60, 80, 0.6);
   background-color: #84BCB1;
-  // background-color: #497970;;
-  // background-color: #1A7F72;
   position: relative;
   padding: 0 0 20px 0;
-  // background-image: url("./../../img/svg/footer-bg.svg");
-  // background-position: bottom center;
-  // background-repeat: repeat-x;
-  // background-size: 100px 100px;
 }
 
 .footer__border-top {
-  // width: 105%;
   fill: #84BCB1;
   position: absolute;
   top: -60px;
@@ -23,84 +15,85 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}  
+}
 
 .footer__social-networks {
   list-style-type: none;
   width: fit-content;
   display: flex;
   padding: 0;
+}
 
-  li {
-    margin: 0 0 0 30px;
-    transition: $transition-fast;
-  }
+.footer__social-networks li {
+  margin: 0 0 0 30px;
+  transition: $transition-fast;
+}
 
-  li:hover {
-    transition: $transition-fast;
-    transform: translateY(-5px);
-  }
+.footer__social-networks li:hover {
+  transition: $transition-fast;
+  transform: translateY(-5px);
+}
 
-  li:first-child {
-    margin: 0;
-  }
+.footer__social-networks li:first-child {
+  margin: 0;
 }
 
 .footer__social-networks-vk {
   width: 50px;
   height: 50px;
+}
 
-  .cls-1 {
-    fill:#07f;
-  }
+.footer__social-networks-vk .cls-1 {
+  fill:#07f;
+}
 
-  .cls-2 {
-    fill: #fff;
-  }
+.footer__social-networks-vk .cls-2 {
+  fill: #fff;
 }
 
 .footer__social-networks-inst {
   width: 50px;
   height: 50px;
+}
 
-  .cls-1 {
-    fill:url(#Inst);
-  }
+.footer__social-networks-inst .cls-1 {
+  fill:url(#Inst);
+}
 
-  .cls-2 {
-    fill:#fff;
-    fill-rule: evenodd;
-  }
+.footer__social-networks-inst .cls-2 {
+  fill:#fff;
+  fill-rule: evenodd;
 }
 
 .footer__social-networks-tg {
   width: 50px;
   height: 50px;
+}
 
-  .cls-1{
-    fill:url(#tg);
-  }
+.footer__social-networks-tg .cls-1{
+  fill: url(#tg);
+}
 
-  .cls-2{
-    fill:#fff;fill-rule:evenodd;
-  }
+.footer__social-networks-tg .cls-2{
+  fill:#fff;
+  fill-rule: evenodd;
 }
 
 .footer__social-networks-watsapp {
   width: 50px;
   height: 50px;
+}
 
-  .cls-1 {
-    fill:#25d366;
-  }
+.footer__social-networks-watsapp .cls-1 {
+  fill:#25d366;
+}
 
-  .cls-2 {
-    fill:#fff;
-    fill-rule:evenodd;
-  }
+.footer__social-networks-watsapp .cls-2 {
+  fill:#fff;
+  fill-rule: evenodd;
+}
 
-  .cls-3 {
-    fill:#fff;
-    fill-rule:evenodd;
-  }
+.footer__social-networks-watsapp .cls-3 {
+  fill:#fff;
+  fill-rule: evenodd;
 }
