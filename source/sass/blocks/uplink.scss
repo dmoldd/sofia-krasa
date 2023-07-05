@@ -7,6 +7,10 @@
   bottom: 15px;
   border-radius: 10px;
   transition: $transition-fast;
+  
+  @media (max-width: 1360px) {
+    display: none;
+  }
 }
 
 .up-link:hover {

@@ -16,6 +16,10 @@
   height: 100%;
   max-width: 1200px;
   padding: 0 20px;
+
+  @include desktops {
+    width: 100%;
+  }
 }
 
 img {
@@ -30,7 +34,7 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
