@@ -1,8 +1,18 @@
 .header {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 3;
-  height: 93px;
+  min-height: 93px;
+  background-color: #84BCB1;
+  padding: 15px 0 0 0;
+  
+  @media (max-width: 900px) {
+    padding: 0;
+  }
+  
+  @media (max-width: 650px) {
+    padding: 25px 0 0 0;
+  }
 }
 
 .header .container {
@@ -133,5 +143,12 @@
   @media (max-width: 900px) {
     position: static;
     transform: translate(0, 0);
+  }
+
+  @media (max-width: 650px) {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 130px;
+    top: 25px;
   }
 }
