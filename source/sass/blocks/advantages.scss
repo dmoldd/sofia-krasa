@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   position: relative;
   padding: 0 20px 100px 20px;
+
+  @media (max-width: 550px) {
+    padding: 0 0 100px 0;
+  }
 }
 
 .advantages__title {
@@ -28,14 +32,36 @@
   display: flex;
   justify-content: space-around;
   padding: 0;
+
+  
+  @media (max-width: 880px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .advantages__card {
   position: relative;
   list-style-type: none;
-  padding: 20px;
+  // padding: 20px;
   width: 263px;
   height: 390px;
+
+  @media (max-width: 880px) {
+    width: 520px;
+    margin: 0 0 50px 0;
+    display: flex;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid blue;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 }
 
 .advantages__item {
@@ -44,15 +70,41 @@
   width: 263px;
   height: 390px;
   padding: 20px;
+
+  
+  @media (max-width: 880px) {
+    width: 520px;
+    border-radius: 0;
+  }
+}
+
+.advantages__item--front {
+  transform: perspective(600px) rotateY(0deg);
+  
+  @media (max-width: 880px) {
+    transform: none;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
+
+.advantages__item--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: perspective(600px) rotateY(180deg);
+  
+  @media (max-width: 880px) {
+    transform: none;
+    position: relative;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
 
 .advantages__item-title {
   text-align: center;
   margin: 0;
-}
-
-.advantages__item--front {
-  transform: perspective(600px) rotateY(0deg);
 }
 
 .advantages__img {
@@ -82,13 +134,6 @@
   transition: $transition-fast;
 }
 
-.advantages__item--back {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  transform: perspective(600px) rotateY(180deg);
-}
-
 .advantages__item--front,
 .advantages__item--back {
   backface-visibility: hidden;
@@ -106,10 +151,18 @@
 
 .advantages__card:hover > .advantages__item--front {
   transform: perspective(600px) rotateY(-180deg);
+
+  @media (max-width: 880px) {
+    transform: none;
+  }
 }
 
 .advantages__card:hover > .advantages__item--back {
   transform: perspective(600px) rotateY(0deg);
+
+  @media (max-width: 880px) {
+    transform: none;
+  }
 }
 
 .advantages__border-triangle {
