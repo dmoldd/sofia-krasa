@@ -108,6 +108,10 @@
     border-radius: 0;
     padding: 30px 30px 0 30px;
   }
+  
+  @media (max-width: 550px) {
+    margin: 10px auto 0;    
+  }
 }
 
 .steps__item:nth-child(odd) {
@@ -143,6 +147,14 @@
     grid-template-rows: 60px 100px 86px 129px;
     grid-template-areas: "steps__item-title" "steps__item-desc"  "steps__item-desc2"  "steps__item-desc3" "picture";
   }
+  
+  @media (max-width: 474px) {
+    grid-template-rows: 60px 100px 123px 129px;
+  }
+  
+  @media (max-width: 373px) {
+    grid-template-rows: 60px 120px 145px 170px;
+  }
 }
 
 .steps__item:last-child {
@@ -167,6 +179,42 @@
     grid-template-columns: 100%;
     grid-template-rows: 60px 129px 400px;
     grid-template-areas: "steps__item-title" "steps__item-desc" "picture";
+  }
+  
+  @media (max-width: 530px) {
+    grid-template-rows: 60px 129px 375px;
+  }
+  
+  @media (max-width: 510px) {
+    grid-template-rows: 60px 129px 360px;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-rows: 60px 129px 335px;
+  }
+  
+  @media (max-width: 435px) {
+    grid-template-rows: 60px 129px 300px;
+  }
+  
+  @media (max-width: 424px) {
+    grid-template-rows: 60px 165px 300px;
+  }
+  
+  @media (max-width: 400px) {
+    grid-template-rows: 60px 165px 265px;
+  }
+  
+  @media (max-width: 385px) {
+    grid-template-rows: 60px 185px 265px;
+  }
+  
+  @media (max-width: 365px) {
+    grid-template-rows: 60px 185px 240px;
+  }
+  
+  @media (max-width: 365px) {
+    grid-template-rows: 60px 212px 226px;
   }
 }
 
@@ -243,6 +291,14 @@
     grid-template-columns: 100%;
     grid-template-rows: 60px 100px 86px 35px;
     grid-template-areas: "steps__item-title" "steps__item-desc"  "steps__item-desc2"  "steps__item-desc3" "picture";
+  }
+
+  @media (max-width: 394px) {
+    grid-template-rows: 60px 100px 86px 55px;
+  }
+
+  @media (max-width: 379px) {
+    grid-template-rows: 60px 100px 86px 100px;
   }
 }
 

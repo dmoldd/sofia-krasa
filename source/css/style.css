@@ -1033,6 +1033,11 @@ a {
   z-index: 2;
   width: 100%;
 }
+@media (max-width: 550px) and (min-width: 475px) {
+  .hero__border-triangle {
+    fill: #ffffff;
+  }
+}
 
 .hero__background {
   position: absolute;
@@ -1346,9 +1351,10 @@ a {
   position: relative;
   padding: 0 20px 100px 20px;
 }
-@media (max-width: 550px) {
+@media (max-width: 550px) and (min-width: 475px) {
   .advantages .container {
     padding: 0 0 15px 0;
+    background-color: #ffffff;
   }
 }
 
@@ -1716,6 +1722,11 @@ a {
     padding: 30px 30px 0 30px;
   }
 }
+@media (max-width: 550px) {
+  .steps__list {
+    margin: 10px auto 0;
+  }
+}
 
 .steps__item:nth-child(odd) {
   width: 50%;
@@ -1754,6 +1765,16 @@ a {
     grid-template-areas: "steps__item-title" "steps__item-desc" "steps__item-desc2" "steps__item-desc3" "picture";
   }
 }
+@media (max-width: 474px) {
+  .steps__item:nth-child(odd) {
+    grid-template-rows: 60px 100px 123px 129px;
+  }
+}
+@media (max-width: 373px) {
+  .steps__item:nth-child(odd) {
+    grid-template-rows: 60px 120px 145px 170px;
+  }
+}
 
 .steps__item:last-child {
   padding: 0 15px 80px 0;
@@ -1779,6 +1800,51 @@ a {
     grid-template-columns: 100%;
     grid-template-rows: 60px 129px 400px;
     grid-template-areas: "steps__item-title" "steps__item-desc" "picture";
+  }
+}
+@media (max-width: 530px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 129px 375px;
+  }
+}
+@media (max-width: 510px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 129px 360px;
+  }
+}
+@media (max-width: 480px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 129px 335px;
+  }
+}
+@media (max-width: 435px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 129px 300px;
+  }
+}
+@media (max-width: 424px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 165px 300px;
+  }
+}
+@media (max-width: 400px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 165px 265px;
+  }
+}
+@media (max-width: 385px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 185px 265px;
+  }
+}
+@media (max-width: 365px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 185px 240px;
+  }
+}
+@media (max-width: 365px) {
+  .steps__item:last-child {
+    grid-template-rows: 60px 212px 226px;
   }
 }
 
@@ -1859,6 +1925,16 @@ a {
     grid-template-columns: 100%;
     grid-template-rows: 60px 100px 86px 35px;
     grid-template-areas: "steps__item-title" "steps__item-desc" "steps__item-desc2" "steps__item-desc3" "picture";
+  }
+}
+@media (max-width: 394px) {
+  .steps__item:nth-child(even) {
+    grid-template-rows: 60px 100px 86px 55px;
+  }
+}
+@media (max-width: 379px) {
+  .steps__item:nth-child(even) {
+    grid-template-rows: 60px 100px 86px 100px;
   }
 }
 
