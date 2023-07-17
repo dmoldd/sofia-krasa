@@ -5,6 +5,10 @@
 
 .services__border-top {
   fill: rgb(147, 188, 180);
+      
+  @media (max-width: 880px) {
+    fill: #c7d9c6;
+  }
 }
 
 .services .container {

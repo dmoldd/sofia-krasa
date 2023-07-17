@@ -282,6 +282,10 @@
   @media (max-width: 920px) {
     align-self: flex-end;
   }
+  
+  @media (max-width: 550px) {
+    margin: 30px 0 30px 0;
+  }
 }
 
 .hero__link:hover {
