@@ -9,6 +9,10 @@
     padding: 0 0 15px 0;
     background-color: #ffffff;
   }
+
+  @media (max-width: 474px) {
+    padding: 0 0 15px 0;
+  }
 }
 
 .advantages__title {
@@ -79,7 +83,7 @@
   }
 
   @media (max-width: 550px) {
-    width: 100%;
+    width: calc(100% - 40px);
     margin: 0;
     // border-bottom: 1px solid blue;
   }
@@ -92,6 +96,9 @@
   @media (max-width: 474px) {
     height: auto;
     margin: 0 0 30px 0;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
   }
 }
 
@@ -109,9 +116,10 @@
   }
   
   @media (max-width: 474px) {
-    background-color: hsl(0deg, 0%, 90%);
+    // background-color: hsl(0deg, 0%, 90%);
     height: auto;
     padding: 0 20px;
+    background: white;
   }
 }
 

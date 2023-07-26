@@ -7,7 +7,15 @@
 .footer__border-top {
   fill: #84BCB1;
   position: absolute;
-  top: -60px;
+  top: -51px;
+  
+  @media (max-width: 750px) {
+    top: -45px;
+  }
+  
+  @media (max-width: 460px) {
+    top: -41px;
+  }
 }
 
 .footer .container {
@@ -17,11 +25,21 @@
   align-items: center;
 }
 
+.footer .container .main-nav {
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
+
 .footer__social-networks {
   list-style-type: none;
   width: fit-content;
   display: flex;
   padding: 0;
+
+  @media (max-width: 780px) {
+    padding: 15px 0 0 0;
+  }
 }
 
 .footer__social-networks li {
@@ -57,7 +75,7 @@
 }
 
 .footer__social-networks-inst .cls-1 {
-  fill:url(#Inst);
+  fill: url(#Instt);
 }
 
 .footer__social-networks-inst .cls-2 {
@@ -71,7 +89,7 @@
 }
 
 .footer__social-networks-tg .cls-1{
-  fill: url(#tg);
+  fill: url(#tgg);
 }
 
 .footer__social-networks-tg .cls-2{
