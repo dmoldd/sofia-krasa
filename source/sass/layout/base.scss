@@ -3,11 +3,11 @@
 }
 
 .page__body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  background: url(../img/svg/bg.svg), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
+  background: url("../img/svg/bg.svg"), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
   background-size: 280px auto, cover;
   background-attachment: fixed;
 }
@@ -55,4 +55,18 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

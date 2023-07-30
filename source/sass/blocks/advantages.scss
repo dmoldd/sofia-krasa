@@ -1,5 +1,5 @@
 .advantages .container {
-  background-color: hsl(0,0%,90%);
+  background-color: $adv-color;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -7,7 +7,7 @@
 
   @media (max-width: 550px) and (min-width: 475px) {
     padding: 0 0 15px 0;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   @media (max-width: 474px) {
@@ -23,19 +23,19 @@
   right: 60px;
   top: 40px;
   margin: 0;
-  
+
   @media (max-width: 800px) {
     font-size: 45px;
   }
-  
+
   @media (max-width: 690px) {
     font-size: 35px;
   }
-  
+
   @media (max-width: 550px) {
     margin: 0 0 0 20px;
   }
-  
+
   @media (max-width: 460px) {
     font-size: 29px;
   }
@@ -45,11 +45,11 @@
   width: 100%;
   font-size: 20px;
   color: #497970;
- 
+
   @media (max-width: 690px) {
     font-size: 17px;
   }
-  
+
   @media (max-width: 550px) {
     margin: 17px 0 10px 20px;
   }
@@ -62,7 +62,6 @@
   justify-content: space-around;
   padding: 0;
 
-  
   @media (max-width: 880px) {
     flex-direction: column;
     align-items: center;
@@ -72,7 +71,6 @@
 .advantages__card {
   position: relative;
   list-style-type: none;
-  // padding: 20px;
   width: 263px;
   height: 390px;
 
@@ -85,20 +83,18 @@
   @media (max-width: 550px) {
     width: calc(100% - 40px);
     margin: 0;
-    // border-bottom: 1px solid blue;
   }
 
   @media (max-width: 500px) {
     font-size: 15px;
   }
 
-    
   @media (max-width: 474px) {
     height: auto;
     margin: 0 0 30px 0;
     border-radius: 8px;
     padding: 20px;
-    background: white;
+    background: $white;
   }
 }
 
@@ -108,24 +104,22 @@
   width: 263px;
   height: 390px;
   padding: 20px;
-  
-  
+
   @media (max-width: 880px) {
     width: 520px;
     border-radius: 0;
   }
-  
+
   @media (max-width: 474px) {
-    // background-color: hsl(0deg, 0%, 90%);
     height: auto;
     padding: 0 20px;
-    background: white;
+    background: $white;
   }
 }
 
 .advantages__item--front {
   transform: perspective(600px) rotateY(0deg);
-  
+
   @media (max-width: 880px) {
     transform: none;
     border-bottom-left-radius: 8px;
@@ -142,7 +136,7 @@
   top: 0;
   left: 0;
   transform: perspective(600px) rotateY(180deg);
-  
+
   @media (max-width: 880px) {
     transform: none;
     position: relative;
@@ -166,7 +160,6 @@
   @media (max-width: 474px) {
     font-size: 30px;
   }
-
 }
 
 .advantages__img {
@@ -176,9 +169,9 @@
 }
 
 .advantages__see-more {
-  color: #669EC0;
+  color: $logo-color-hover;
   width: calc(100% - 40px);
-  border: 3px solid #669EC0;
+  border: 3px solid $logo-color-hover;
   padding: 10px;
   position: absolute;
   bottom: 20px;
@@ -195,7 +188,7 @@
 }
 
 .advantages__see-more:hover {
-  background-color: #669EC0;
+  background-color: $logo-color-hover;
   color: $white;
   transition: $transition-fast;
 }
@@ -209,8 +202,7 @@
 .advantages__text {
   margin: 15px 0 0 0;
   text-align: center;
-  
-  
+
   @media (max-width: 474px) {
     font-size: 20px;
     margin: 25px 0 0 0;

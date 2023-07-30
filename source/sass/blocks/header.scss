@@ -1,22 +1,21 @@
 .header {
-  // position: fixed;
   width: 100%;
   z-index: 3;
   min-height: 93px;
-  background-color: #84BCB1;
+  background-color: $dark-green;
   padding: 15px 0 0 0;
-  
+
   @media (max-width: 900px) {
     padding: 0;
   }
-  
+
   @media (max-width: 650px) {
     padding: 25px 0 0 0;
   }
 }
 
 .header .container {
-  background-color: #84BCB1;
+  background-color: $dark-green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,7 +73,7 @@
 }
 
 .header__social-networks-vk g path {
-  fill: #fff;
+  fill: $white;
 }
 
 .header__social-networks-vk:hover g path {
@@ -92,7 +91,7 @@
 }
 
 .header__social-networks-inst g path {
-  fill: #fff;
+  fill: $white;
 }
 
 .header__social-networks-inst:hover g path {
@@ -110,7 +109,7 @@
 }
 
 .header__social-networks-tg g path {
-  fill: #fff;
+  fill: $white;
 }
 
 .header__social-networks-tg:hover g path {
@@ -127,7 +126,7 @@
 }
 
 .header__social-networks-watsapp g path {
-  fill: #fff;
+  fill: $white;
 }
 
 .header__social-networks-watsapp:hover g path {

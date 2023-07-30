@@ -177,7 +177,7 @@ button:active, button:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  background: url(../img/svg/bg.svg), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
+  background: url("../img/svg/bg.svg"), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
   background-size: 280px auto, cover;
   background-attachment: fixed;
 }
@@ -200,7 +200,7 @@ img {
 }
 
 .wrapper {
-  background-color: #FBF8EC;
+  background-color: #fbf8ec;
   box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
   display: flex;
@@ -225,6 +225,20 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .sidebar {
@@ -354,7 +368,7 @@ a {
   width: 100%;
   z-index: 3;
   min-height: 93px;
-  background-color: #84BCB1;
+  background-color: #84bcb1;
   padding: 15px 0 0 0;
 }
 @media (max-width: 900px) {
@@ -369,7 +383,7 @@ a {
 }
 
 .header .container {
-  background-color: #84BCB1;
+  background-color: #84bcb1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -386,12 +400,12 @@ a {
 }
 
 .header__link:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
   transition: all 0.2s ease-in-out;
 }
 
 .header__link:active {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   transition: all 0.2s ease-in-out;
 }
 
@@ -428,7 +442,7 @@ a {
 }
 
 .header__social-networks-vk g path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .header__social-networks-vk:hover g path {
@@ -446,7 +460,7 @@ a {
 }
 
 .header__social-networks-inst g path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .header__social-networks-inst:hover g path {
@@ -464,7 +478,7 @@ a {
 }
 
 .header__social-networks-tg g path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .header__social-networks-tg:hover g path {
@@ -481,7 +495,7 @@ a {
 }
 
 .header__social-networks-watsapp g path {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .header__social-networks-watsapp:hover g path {
@@ -511,7 +525,7 @@ a {
 
 .main-nav {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -542,9 +556,9 @@ a {
   transition: transform 0.3s;
   right: -20px;
   top: 25px;
-  border-top: 30px solid #84BCB1;
-  background-color: #84BCB1;
-  color: #fff;
+  border-top: 30px solid #84bcb1;
+  background-color: #84bcb1;
+  color: #ffffff;
 }
 
 .main-nav__link {
@@ -576,7 +590,7 @@ a {
   width: 100%;
   height: 5px;
   display: block;
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -586,7 +600,7 @@ a {
 }
 
 .main-nav__link-icon span:last-child {
-  background-color: #fff;
+  background-color: #ffffff;
   height: 100%;
   width: 5px;
   display: block;
@@ -628,7 +642,7 @@ a {
   display: flex;
   padding: 10px 0 10px 0;
   justify-content: flex-end;
-  border-top: 1px solid #D6D7D6;
+  border-top: 1px solid #d6d7d6;
 }
 
 .main-nav__list--droped .main-nav__link:first-child a {
@@ -650,7 +664,7 @@ a {
 .main-nav__hover-logo span:first-child {
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   transition: all 0.5s;
 }
@@ -659,7 +673,7 @@ a {
   width: 66%;
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   transition: all 0.5s;
 }
 
@@ -667,7 +681,7 @@ a {
   width: 33%;
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   transition: all 0.5s;
 }
 
@@ -733,7 +747,7 @@ a {
   }
   .main-nav__burger span {
     display: block;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     height: 8px;
     transition: all 0.2s ease-in-out;
@@ -1420,7 +1434,7 @@ a {
 
 .services .container svg {
   margin: 0 0 0 -20px;
-  fill: #FBF8EC;
+  fill: #fbf8ec;
 }
 
 .services__title {
@@ -1465,7 +1479,7 @@ a {
 
 .services__item {
   position: relative;
-  background-color: #FBF8EC;
+  background-color: body-bg;
   padding: 85% 14px 73px 15px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
@@ -1619,8 +1633,8 @@ a {
   width: calc(100% - 30px);
   text-align: center;
   border-radius: 4px;
-  border: 3px solid #669EC0;
-  color: #669EC0;
+  border: 3px solid #669ec0;
+  color: #669ec0;
   font-weight: 700;
   padding: 10px;
   text-transform: uppercase;
@@ -1628,13 +1642,13 @@ a {
   transition: all 0.2s ease-in-out;
 }
 .services__item-order-link:hover {
-  background-color: #669EC0;
-  color: #FBF8EC;
+  background-color: #669ec0;
+  color: #fbf8ec;
   transition: all 0.2s ease-in-out;
 }
 
 .actions {
-  background-color: #FBF8EC;
+  background-color: #fbf8ec;
 }
 
 .actions .container {
@@ -1766,7 +1780,7 @@ a {
     margin: 0 0 30px 0;
     border-radius: 8px;
     padding: 20px;
-    background: white;
+    background: #ffffff;
   }
 }
 
@@ -1787,7 +1801,7 @@ a {
   .advantages__item {
     height: auto;
     padding: 0 20px;
-    background: white;
+    background: #ffffff;
   }
 }
 
@@ -1849,9 +1863,9 @@ a {
 }
 
 .advantages__see-more {
-  color: #669EC0;
+  color: #669ec0;
   width: calc(100% - 40px);
-  border: 3px solid #669EC0;
+  border: 3px solid #669ec0;
   padding: 10px;
   position: absolute;
   bottom: 20px;
@@ -1869,7 +1883,7 @@ a {
 }
 
 .advantages__see-more:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
   color: #ffffff;
   transition: all 0.2s ease-in-out;
 }

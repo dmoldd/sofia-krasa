@@ -1,6 +1,6 @@
 .main-nav {
   margin: 0;
-  color: #fff;
+  color: $white;
   position: relative;
   width: fit-content;
 }
@@ -26,12 +26,12 @@
   transform-origin: 0 0;
   display: flex;
   flex-direction: column;
-  transition: transform .3s;
+  transition: transform 0.3s;
   right: -20px;
   top: 25px;
-  border-top: 30px solid #84BCB1;
-  background-color: #84BCB1;
-  color: #fff;
+  border-top: 30px solid $dark-green;
+  background-color: $dark-green;
+  color: $white;
 }
 
 .main-nav__link {
@@ -63,7 +63,7 @@
   width: 100%;
   height: 5px;
   display: block;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,7 +73,7 @@
 }
 
 .main-nav__link-icon span:last-child {
-  background-color: #fff;
+  background-color: $white;
   height: 100%;
   width: 5px;
   display: block;
@@ -88,10 +88,10 @@
 .main-nav__link:hover > .main-nav__list--droped {
   transform: rotateX(0deg);
   height: auto;
-  transition: transform .3s;
+  transition: transform 0.3s;
   margin-right: fit-content;
-  border-bottom: 1px solid #d9d9d9;
-  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid $droped-link-hover;
+  border-right: 1px solid $droped-link-hover;
 }
 
 .main-nav__list--droped .main-nav__link:hover .main-nav__link-icon {
@@ -115,7 +115,7 @@
   display: flex;
   padding: 10px 0 10px 0;
   justify-content: flex-end;
-  border-top: 1px solid #D6D7D6;
+  border-top: 1px solid $droped-link-hover1;
 }
 
 .main-nav__list--droped .main-nav__link:first-child a {
@@ -137,7 +137,7 @@
 .main-nav__hover-logo span:first-child {
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: $white;
   width: 100%;
   transition: all 0.5s;
 }
@@ -146,7 +146,7 @@
   width: 66%;
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: $white;
   transition: all 0.5s;
 }
 
@@ -154,7 +154,7 @@
   width: 33%;
   display: block;
   height: 3px;
-  background-color: white;
+  background-color: $white;
   transition: all 0.5s;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .main-nav__link:hover .main-nav__hover-logo span {
-  background-color: hsl(0deg, 0%, 90%);
+  background-color: $adv-color;
 }
 
 .main-nav__link:hover .main-nav__hover-logo span:first-child {
@@ -219,7 +219,7 @@
 
     span {
       display: block;
-      background-color: white;
+      background-color: $white;
       width: 100%;
       height: 8px;
       transition: $transition-fast;
@@ -241,7 +241,7 @@
     transform-origin: center center;
     transform: translate(0, -22px) rotate(-45deg);
   }
-  
+
   span:nth-of-type(2) {
     display: none;
     transition: $transition-fast;
@@ -250,14 +250,12 @@
 
 .main-nav--closed,
 .main-nav--opened {
-
   @media (max-width: 650px) {
     width: 100%;
   }
 }
 
 .main-nav--opened {
-  
   @media (max-width: 650px) {
     margin: 0 0 210px 0;
   }
@@ -276,7 +274,6 @@
 }
 
 .main-nav--opened .main-nav__list--mobile .main-nav__link a {
-
   @media (max-width: 650px) {
     margin: 0 auto;
     font-size: 30px;
@@ -288,11 +285,3 @@
     font-size: 25px;
   }
 }
-
-// .main-nav--opened {
-//   position: absolute;
-
-//   // height: 100vh;
-//   width: 100vw;
-//   margin: 0 0 0 -20px;
-// }
