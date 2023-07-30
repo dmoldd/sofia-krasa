@@ -27,41 +27,41 @@
 }
 
 .sidebar__social-networks-vk .cls-1 {
-  fill:#07f;
+  fill: $vk-fill;
 }
 
 .sidebar__social-networks-vk .cls-2 {
-  fill: #fff;
+  fill: $white;
 }
 
 .sidebar__social-networks-inst .cls-1 {
-  fill:url(#Inst);
+  fill: url("#Inst");
 }
 
 .sidebar__social-networks-inst .cls-2 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }
 
 .sidebar__social-networks-tg .cls-1 {
-  fill:url(#tg);
+  fill: url("#tg");
 }
 
 .sidebar__social-networks-tg .cls-2 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }
 
 .sidebar__social-networks-watsapp .cls-1 {
-  fill:#25d366;
+  fill: $watsapp-fill;
 }
 
 .sidebar__social-networks-watsapp .cls-2 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }
 
 .sidebar__social-networks-watsapp .cls-3 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }

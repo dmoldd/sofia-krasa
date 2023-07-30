@@ -1,18 +1,18 @@
-.footer { 
-  background-color: #84BCB1;
+.footer {
+  background-color: $dark-green;
   position: relative;
   padding: 0 0 20px 0;
 }
 
 .footer__border-top {
-  fill: #84BCB1;
+  fill: $dark-green;
   position: absolute;
   top: -51px;
-  
+
   @media (max-width: 750px) {
     top: -45px;
   }
-  
+
   @media (max-width: 460px) {
     top: -41px;
   }
@@ -62,11 +62,11 @@
 }
 
 .footer__social-networks-vk .cls-1 {
-  fill:#07f;
+  fill: $vk-fill;
 }
 
 .footer__social-networks-vk .cls-2 {
-  fill: #fff;
+  fill: $white;
 }
 
 .footer__social-networks-inst {
@@ -75,11 +75,11 @@
 }
 
 .footer__social-networks-inst .cls-1 {
-  fill: url(#Instt);
+  fill: url("#Instt");
 }
 
 .footer__social-networks-inst .cls-2 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }
 
@@ -88,12 +88,12 @@
   height: 50px;
 }
 
-.footer__social-networks-tg .cls-1{
-  fill: url(#tgg);
+.footer__social-networks-tg .cls-1 {
+  fill: url("#tgg");
 }
 
-.footer__social-networks-tg .cls-2{
-  fill:#fff;
+.footer__social-networks-tg .cls-2 {
+  fill: $white;
   fill-rule: evenodd;
 }
 
@@ -103,15 +103,15 @@
 }
 
 .footer__social-networks-watsapp .cls-1 {
-  fill:#25d366;
+  fill: $watsapp-fill;
 }
 
 .footer__social-networks-watsapp .cls-2 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }
 
 .footer__social-networks-watsapp .cls-3 {
-  fill:#fff;
+  fill: $white;
   fill-rule: evenodd;
 }

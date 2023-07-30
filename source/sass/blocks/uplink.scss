@@ -1,13 +1,13 @@
 .up-link {
   height: 50px;
   width: 50px;
-  background-color: #84BCB1;
+  background-color: $dark-green;
   position: fixed;
   right: 15px;
   bottom: 15px;
   border-radius: 10px;
   transition: $transition-fast;
-  
+
   @media (max-width: 1360px) {
     display: none;
   }
