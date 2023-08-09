@@ -1664,7 +1664,7 @@ a {
   padding: 60px;
   border-radius: 20px;
   position: relative;
-  background-image: url("./../../img/svg/citation1.svg"), url("./../../img/svg/citation2.svg");
+  background-image: url("../img/svg/citation1.svg"), url("../img/svg/citation2.svg");
   background-repeat: no-repeat;
   background-size: 371px auto, 371px auto;
   background-position: left 21px top 30px, left 297px top 30px;
@@ -1722,7 +1722,7 @@ a {
 }
 @media (max-width: 393px) {
   .sale__item {
-    background-image: url("./../../img/svg/citation3.svg");
+    background-image: url("../img/svg/citation3.svg");
     background-size: 356px 75%;
   }
 }
