@@ -25,6 +25,16 @@
   align-items: center;
 }
 
+.footer__live-internet-counter {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  @media (max-width: 1000px) {
+    z-index: -1;
+  }
+}
+
 .footer .container .main-nav {
   @media (max-width: 780px) {
     display: none;
