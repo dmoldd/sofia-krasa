@@ -1,6 +1,8 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://sofya-krasa.ru/</loc>
-<lastmod>2023-08-16T12:54:52+00:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+    <url>
+        <loc>https://sofya-krasa.ru/</loc>
+        <lastmod>2023-08-16T12:54:52+00:00</lastmod>
+        <changefreq>dayly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
