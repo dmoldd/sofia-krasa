@@ -1,0 +1,136 @@
+.photos-slider {
+  width: 50%;
+}
+.container {
+}
+
+
+.slider {
+  list-style-type: none;
+  padding: 0;
+}
+.slider__item {
+}
+
+
+.slider {
+  // margin: 50px 0 50px 0;
+}
+
+.slider__item-img {
+  margin: 0 auto;
+}
+
+.slick-slider {
+  position: relative;
+  // min-width: 0;
+}
+// Ограничевающая оболочка
+.slick-list {
+  overflow: hidden;
+}
+
+// Лента слайдов
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Слайд
+.slick-slide {
+  margin: 0 auto;
+}
+// Слайд активный
+.slick-slide.slick-active {
+
+}
+// Слайд основной
+.slick-slide.slick-current {
+}
+// Слайд по центру
+.slick-slide.slick-center {}
+
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: 890px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 750px) {
+    top: 100%;
+  }
+
+  @media (max-width: 700px) {
+    top: 103%;
+  }
+}
+
+.slider .slick-prev {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  background-image: url("../img/svg/arrow-left.svg");
+  background-size: 100% 100%;
+
+  // @media (max-width: 890px) {
+  //   left: 5%;
+  // }
+
+  // @media (max-width: 750px) {
+  //   left: 0;
+  // }
+
+  // @media (max-width: 700px) {
+  //   left: 10%;
+  // }
+}
+
+// Стрелка вправо
+.slider .slick-next {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  background-image: url("../img/svg/arrow-right.svg");
+  background-size: 100% 100%;
+
+  @media (max-width: 890px) {
+    right: 5%;
+  }
+
+  @media (max-width: 750px) {
+    right: 0;
+  }
+
+  @media (max-width: 700px) {
+    right: 10%;
+  }
+}
+// Стрелка неактивная
+.slick-arrow.slick-disabled {}
+
+// Точки
+.slick-dots {
+  position: relative;
+  display: flex;
+  // list-style-type: dots;
+  margin: 0 auto;
+}
+
+.slick-dots button {
+  visibility: hidden;
+}
+
+.slick-dots-li {
+}
+.slick-dots-button {}

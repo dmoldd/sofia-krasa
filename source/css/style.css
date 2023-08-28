@@ -365,6 +365,11 @@ a {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header {
   width: 100%;
   z-index: 3;
@@ -2705,6 +2710,7 @@ a {
 }
 
 .faq {
+  width: 50%;
   padding: 0 0 100px 0;
 }
 @media (max-width: 650px) {
@@ -2770,5 +2776,104 @@ button.faq__question-title.is-opened::after {
 .faq__answer p {
   margin: 10px 0 0 40px;
   padding: 0 10px 0 0;
+}
+
+.photos-slider {
+  width: 50%;
+}
+
+.slider {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slider__item-img {
+  margin: 0 auto;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slick-slide {
+  margin: 0 auto;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+}
+@media (max-width: 890px) {
+  .slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .slider .slick-arrow {
+    top: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .slider .slick-arrow {
+    top: 103%;
+  }
+}
+
+.slider .slick-prev {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  background-image: url("../img/svg/arrow-left.svg");
+  background-size: 100% 100%;
+}
+
+.slider .slick-next {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  background-image: url("../img/svg/arrow-right.svg");
+  background-size: 100% 100%;
+}
+@media (max-width: 890px) {
+  .slider .slick-next {
+    right: 5%;
+  }
+}
+@media (max-width: 750px) {
+  .slider .slick-next {
+    right: 0;
+  }
+}
+@media (max-width: 700px) {
+  .slider .slick-next {
+    right: 10%;
+  }
+}
+
+.slick-dots {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+}
+
+.slick-dots button {
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */
