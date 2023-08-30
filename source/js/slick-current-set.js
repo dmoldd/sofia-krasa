@@ -4,6 +4,7 @@ $(document).ready(function(){
     pauseOnFocus: true,
     dots: true,
     autoplay: true,
+    arrows: false
     // fade: true
   });
 });
