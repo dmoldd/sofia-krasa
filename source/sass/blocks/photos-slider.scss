@@ -133,10 +133,21 @@
   // visibility: hidden;
   font-size: 0;
   background-color: gray;
-  border: 1 white;
+  border: 1px white;
   width: 10px;
   height: 10px;
   border-radius: 100px;
+  
+  &:hover {
+  }
+}
+
+.slick-dots li:hover button {
+  background-color: rgb(207, 207, 207);
+}
+
+.slick-dots li.slick-active button {
+  background-color: white;
 }
 
 .slick-active {
