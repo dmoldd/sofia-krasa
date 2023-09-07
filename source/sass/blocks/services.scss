@@ -95,6 +95,9 @@
 
 .services .container {
   position: relative;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .services .container svg {

@@ -1,15 +1,22 @@
 .faq {
-  width: 50%;
+  width: 100%;
   padding: 0 0 100px 0;
 
   @media (max-width: 650px) {
     padding: 0 0 50px 0;
   }
+
 }
 
 .faq .container {
+  padding: 0 calc(50% + 20px) 0 20px;
   display: flex;
   flex-direction: column;
+  
+  
+  @media (max-width: 950px) {
+    padding: 600px 0 0 0;
+  }
 }
 
 .faq__title {

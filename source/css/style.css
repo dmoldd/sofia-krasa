@@ -365,11 +365,6 @@ a {
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
-.maincontent {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .header {
   width: 100%;
   z-index: 3;
@@ -852,7 +847,6 @@ a {
   text-align: center;
   z-index: 1;
   padding: 0 0 50px 0;
-  min-width: 50%;
 }
 @media (max-width: 920px) {
   .hero__info {
@@ -1447,6 +1441,11 @@ a {
 
 .services .container {
   position: relative;
+}
+@media (max-width: 1200px) {
+  .services .container {
+    width: 100%;
+  }
 }
 
 .services .container svg {
@@ -2710,7 +2709,7 @@ a {
 }
 
 .faq {
-  width: 50%;
+  width: 100%;
   padding: 0 0 100px 0;
 }
 @media (max-width: 650px) {
@@ -2720,8 +2719,14 @@ a {
 }
 
 .faq .container {
+  padding: 0 calc(50% + 20px) 0 20px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 950px) {
+  .faq .container {
+    padding: 600px 0 0 0;
+  }
 }
 
 .faq__title {
@@ -2779,7 +2784,12 @@ button.faq__question-title.is-opened::after {
 }
 
 .photos-slider {
-  width: 50%;
+  position: absolute;
+  width: 100%;
+}
+
+.photos-slider .container {
+  padding: 57px 20px 0 50%;
 }
 
 .slider {
@@ -2870,6 +2880,9 @@ button.faq__question-title.is-opened::after {
   margin: 0 auto;
   position: absolute;
   bottom: 40px;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%);
 }
 
 .slick-dots button {
