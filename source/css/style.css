@@ -2710,7 +2710,7 @@ a {
 
 .faq {
   width: 100%;
-  padding: 0 0 100px 0;
+  padding: 0 0 250px 0;
 }
 @media (max-width: 650px) {
   .faq {
@@ -2725,7 +2725,22 @@ a {
 }
 @media (max-width: 950px) {
   .faq .container {
-    padding: 600px 0 0 0;
+    padding: 660px 0 0 0;
+  }
+}
+@media (max-width: 450px) {
+  .faq .container {
+    padding: 560px 0 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .faq .container {
+    padding: 520px 0 0 0;
+  }
+}
+@media (max-width: 350px) {
+  .faq .container {
+    padding: 490px 0 0 0;
   }
 }
 
@@ -2786,10 +2801,76 @@ button.faq__question-title.is-opened::after {
 .photos-slider {
   position: absolute;
   width: 100%;
+  max-width: 1200px;
 }
 
 .photos-slider .container {
   padding: 57px 20px 0 50%;
+}
+@media (max-width: 950px) {
+  .photos-slider .container {
+    padding: 0 25% 0 25%;
+  }
+}
+@media (max-width: 900px) {
+  .photos-slider .container {
+    padding: 0 23% 0 23%;
+  }
+}
+@media (max-width: 850px) {
+  .photos-slider .container {
+    padding: 0 21% 0 21%;
+  }
+}
+@media (max-width: 800px) {
+  .photos-slider .container {
+    padding: 0 19% 0 19%;
+  }
+}
+@media (max-width: 750px) {
+  .photos-slider .container {
+    padding: 0 17% 0 17%;
+  }
+}
+@media (max-width: 700px) {
+  .photos-slider .container {
+    padding: 0 15% 0 15%;
+  }
+}
+@media (max-width: 650px) {
+  .photos-slider .container {
+    padding: 0 13% 0 13%;
+  }
+}
+@media (max-width: 600px) {
+  .photos-slider .container {
+    padding: 0 11% 0 11%;
+  }
+}
+@media (max-width: 550px) {
+  .photos-slider .container {
+    padding: 0 8% 0 8%;
+  }
+}
+@media (max-width: 500px) {
+  .photos-slider .container {
+    padding: 0 5% 0 5%;
+  }
+}
+@media (max-width: 450px) {
+  .photos-slider .container {
+    padding: 0 3% 0 3%;
+  }
+}
+@media (max-width: 400px) {
+  .photos-slider .container {
+    padding: 0 1% 0 1%;
+  }
+}
+@media (max-width: 350px) {
+  .photos-slider .container {
+    padding: 0;
+  }
 }
 
 .slider {
@@ -2803,6 +2884,7 @@ button.faq__question-title.is-opened::after {
 
 .slick-slider {
   position: relative;
+  margin: 0;
 }
 
 .slick-list {
