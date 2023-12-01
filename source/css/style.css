@@ -242,6 +242,34 @@ a {
   overflow: hidden;
 }
 
+.header__change-theme-button {
+  height: 50px;
+  width: 50px;
+  margin: 0 20px 0 auto;
+  background-image: url("../img/theme/light-theme.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  padding: 0;
+  transform: rotate(0deg);
+  transition: transform 1.5s, background-size 0.5s;
+}
+.header__change-theme-button:hover {
+  cursor: pointer;
+  transform: rotate(250deg);
+  transition: transform 1.5s, background-size 0.5s;
+}
+.header__change-theme-button:active {
+  background-size: 70% 70%;
+  transition: transform 1.5s, background-size 0.5s;
+}
+
+.dark-theme {
+  background-image: url("../img/theme/dark-theme.png");
+}
+
 .sidebar {
   position: fixed;
   right: 0;
