@@ -24,6 +24,15 @@
   }
 }
 
-.dark-theme {
+.dark-theme .header__change-theme-button {
   background-image: url("../img/theme/dark-theme.png");
+}
+
+.dark-theme .hero {
+  background-color: #186f5d;
+  color: #8FBDB2;
+}
+
+.dark-theme .header  {
+  background-color: #186f5d;
 }

@@ -266,8 +266,17 @@ a {
   transition: transform 1.5s, background-size 0.5s;
 }
 
-.dark-theme {
+.dark-theme .header__change-theme-button {
   background-image: url("../img/theme/dark-theme.png");
+}
+
+.dark-theme .hero {
+  background-color: #186f5d;
+  color: #8FBDB2;
+}
+
+.dark-theme .header {
+  background-color: #186f5d;
 }
 
 .sidebar {
@@ -412,7 +421,7 @@ a {
 }
 
 .header .container {
-  background-color: #84bcb1;
+  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -842,6 +851,7 @@ a {
 
 .hero {
   background-color: #84bcb1;
+  color: #dfdfdf;
 }
 @media (max-width: 920px) {
   .hero {
@@ -853,6 +863,7 @@ a {
   display: flex;
   position: relative;
   justify-content: space-between;
+  color: inherit;
 }
 @media (max-width: 920px) {
   .hero .container {
@@ -1058,13 +1069,13 @@ a {
   height: fit-content;
   border: 1px solid #ffffff;
   border-radius: 15px;
-  color: #ffffff;
+  color: inherit;
   margin: 0 7px 0 7px;
   padding: 0 5px 0 5px;
 }
 
 .hero__main-desc {
-  color: #ffffff;
+  color: inherit;
   font-size: 19px;
 }
 
@@ -1074,7 +1085,7 @@ a {
   width: 100%;
   font-size: 109px;
   font-weight: 700;
-  color: #ffffff;
+  color: inherit;
   line-height: 0.8;
   margin: 20px 0 0 0;
   height: -moz-fit-content;

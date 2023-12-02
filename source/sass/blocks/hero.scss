@@ -4,12 +4,15 @@
   @media (max-width: 920px) {
     height: auto;
   }
+
+  color: #dfdfdf;
 }
 
 .hero .container {
   display: flex;
   position: relative;
   justify-content: space-between;
+  color: inherit;
 
   @media (max-width: 920px) {
     flex-wrap: wrap;
@@ -195,13 +198,13 @@
   height: fit-content;
   border: 1px solid $white;
   border-radius: 15px;
-  color: $white;
+  color: inherit;
   margin: 0 7px 0 7px;
   padding: 0 5px 0 5px;
 }
 
 .hero__main-desc {
-  color: $white;
+  color: inherit;
   font-size: 19px;
 }
 
@@ -211,7 +214,7 @@
   width: 100%;
   font-size: 109px;
   font-weight: 700;
-  color: $white;
+  color: inherit;
   line-height: 0.8;
   margin: 20px 0 0 0;
   height: fit-content;

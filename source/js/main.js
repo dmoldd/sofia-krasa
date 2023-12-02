@@ -1,7 +1,8 @@
 const changeThemeButton = document.querySelector('.header__change-theme-button');
+const pageBody =  document.querySelector('.page__body');
 
 const onChangeTheme = () => {
-    changeThemeButton.classList.toggle('dark-theme');
+    pageBody.classList.toggle('dark-theme');
     console.log(1)
 };
 
