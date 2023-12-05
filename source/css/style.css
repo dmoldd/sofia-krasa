@@ -242,43 +242,6 @@ a {
   overflow: hidden;
 }
 
-.header__change-theme-button {
-  height: 50px;
-  width: 50px;
-  margin: 0 20px 0 auto;
-  background-image: url("../img/theme/light-theme.png");
-  background-size: 100% 100%;
-  background-position: center center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border-color: transparent;
-  padding: 0;
-  transform: rotate(0deg);
-  transition: transform 1.5s, background-size 0.5s;
-}
-.header__change-theme-button:hover {
-  cursor: pointer;
-  transform: rotate(250deg);
-  transition: transform 1.5s, background-size 0.5s;
-}
-.header__change-theme-button:active {
-  background-size: 70% 70%;
-  transition: transform 1.5s, background-size 0.5s;
-}
-
-.dark-theme .header__change-theme-button {
-  background-image: url("../img/theme/dark-theme.png");
-}
-
-.dark-theme .hero {
-  background-color: #186f5d;
-  color: #8FBDB2;
-}
-
-.dark-theme .header {
-  background-color: #186f5d;
-}
-
 .sidebar {
   position: fixed;
   right: 0;
@@ -3031,5 +2994,89 @@ button.faq__question-title.is-opened::after {
   margin: 0 0 0 10px;
   border: none;
   list-style: none;
+}
+
+.header__change-theme-button {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/theme/light-theme.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  padding: 0;
+  transform: rotate(0deg);
+  transition: transform 1.5s, background-size 0.5s;
+}
+.header__change-theme-button:hover {
+  cursor: pointer;
+  transform: rotate(250deg);
+  transition: transform 1.5s, background-size 0.5s;
+}
+.header__change-theme-button:active {
+  background-size: 70% 70%;
+  transition: transform 1.5s, background-size 0.5s;
+}
+.header__change-theme-button-container {
+  padding: 0 10px;
+  border: 1px solid transparent;
+  margin: 0 20px 0 auto;
+  display: flex;
+}
+.header__change-theme-button-container:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.header__theme-name {
+  color: white;
+}
+.header__theme-name--black {
+  display: none;
+}
+
+.dark-theme .header__change-theme-button {
+  background-image: url("../img/theme/dark-theme.png");
+}
+
+.dark-theme .hero {
+  background-color: #186f5d;
+  color: #8FBDB2;
+}
+
+.dark-theme .hero__main-p {
+  border: 1px solid #8FBDB2;
+}
+
+.dark-theme .main-nav--closed {
+  color: #8FBDB2;
+}
+
+.dark-theme .main-nav__hover-logo span {
+  background-color: #8FBDB2;
+}
+
+.dark-theme .header {
+  background-color: #186f5d;
+}
+
+.dark-theme .header__social-networks-vk a svg path,
+.dark-theme .header__social-networks-tg a svg path,
+.dark-theme .header__social-networks-inst a svg path,
+.dark-theme .header__social-networks-watsapp a svg path {
+  fill: #8FBDB2;
+}
+
+.dark-theme .header__social-networks-vk:hover a svg path,
+.dark-theme .header__social-networks-tg:hover a svg path,
+.dark-theme .header__social-networks-inst:hover a svg path,
+.dark-theme .header__social-networks-watsapp:hover a svg path {
+  fill: #fff;
+}
+
+.dark-theme .main-nav__list--droped {
+  border-top: 30px solid #186f5d;
+  background-color: #186f5d;
 }
 /*# sourceMappingURL=style.css.map */
