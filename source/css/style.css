@@ -3138,14 +3138,32 @@ button.faq__question-title.is-opened::after {
   background-color: #186f5d;
   fill: #186f5d;
 }
+@media (max-width: 880px) {
+  .dark-theme .steps .container,
+.dark-theme .steps__border-top path {
+    background-color: #93aa92;
+    fill: #93aa92;
+  }
+}
 
 .dark-theme .services__border-top {
   fill: #186f5d;
+}
+@media (max-width: 880px) {
+  .dark-theme .services__border-top {
+    fill: #93aa92;
+  }
 }
 
 .dark-theme .steps__title,
 .dark-theme .steps__desc {
   color: #8FBDB2;
+}
+@media (max-width: 880px) {
+  .dark-theme .steps__title,
+.dark-theme .steps__desc {
+    color: #292e29;
+  }
 }
 
 .dark-theme .steps__list {
