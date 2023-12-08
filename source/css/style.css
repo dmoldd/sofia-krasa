@@ -178,7 +178,7 @@ button:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  background: url("../img/svg/bg.svg"), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
+  background: url("../img/svg/bg-black-theme.png"), linear-gradient(174.2deg, rgb(255, 244, 228) 7.1%, rgb(240, 246, 238) 67.4%);
   background-size: 280px auto, cover;
   background-attachment: fixed;
 }
@@ -3025,6 +3025,11 @@ button.faq__question-title.is-opened::after {
     order: 1;
   }
 }
+@media (max-width: 520px) {
+  .header__change-theme-button {
+    margin: 0 0 0 auto;
+  }
+}
 .header__change-theme-button-container:hover .header__change-theme-button {
   transform: rotate(250deg);
   transition: transform 1.5s, background-size 0.5s;
@@ -3046,10 +3051,20 @@ button.faq__question-title.is-opened::after {
     margin: 0 20px 0 auto;
   }
 }
+@media (max-width: 520px) {
+  .header__change-theme-button-container {
+    position: relative;
+  }
+}
 .header__change-theme-button-container:hover {
   border: 1px solid white;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 520px) {
+  .header__change-theme-button-container:hover {
+    border: 1px solid transparent;
+  }
 }
 .header__change-theme-button-container:hover .header__theme-name {
   color: #fff;
@@ -3061,6 +3076,14 @@ button.faq__question-title.is-opened::after {
   transition: all 0.2s ease-in-out;
   margin: 0 0 0 10px;
   align-self: center;
+}
+@media (max-width: 520px) {
+  .header__theme-name {
+    position: absolute;
+    top: 59px;
+    left: 75px;
+    color: #e6e6e6;
+  }
 }
 
 .dark-theme .header__change-theme-button {
@@ -3181,6 +3204,11 @@ button.faq__question-title.is-opened::after {
 .dark-theme .sale .container {
   background-color: #186f5d;
 }
+@media (max-width: 510px) {
+  .dark-theme .sale .container {
+    background-color: hsl(0deg, 0%, 79.2%);
+  }
+}
 
 .dark-theme .sale__item {
   background-color: #93aa92;
@@ -3215,5 +3243,15 @@ button.faq__question-title.is-opened::after {
 
 .dark-theme .hero__title span {
   border: 1px solid #c3cec3;
+}
+
+@media (max-width: 474px) {
+  .dark-theme .advantages__card {
+    background: #e6e6e6;
+  }
+}
+
+.dark-theme .steps__item-desc svg path {
+  fill: black;
 }
 /*# sourceMappingURL=style.css.map */

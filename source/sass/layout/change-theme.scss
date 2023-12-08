@@ -25,6 +25,10 @@
     order: 1;
   }
 
+  @media (max-width: 520px) {
+    margin: 0 0 0 auto;
+  }
+
   &-container:hover & {
     transform: rotate(250deg);
     transition: transform 1.5s, background-size 0.5s;
@@ -34,7 +38,7 @@
     background-size: 70% 70%;
     transition: transform 1.5s, background-size 0.5s;
   }
-  
+
   &-container {
     cursor: pointer;
     padding: 5px 10px 5px;
@@ -46,12 +50,20 @@
       min-width: 190px;
       margin: 0 20px 0 auto;
     }
+
+    @media (max-width: 520px) {
+      position: relative;
+    }
   }
 
   &-container:hover {
     border: 1px solid white;
     border-radius: 5px;
     transition: $transition-fast;
+
+    @media (max-width: 520px) {
+      border: 1px solid transparent;
+    }
   }
 
   &-container:hover .header__theme-name {
@@ -65,6 +77,13 @@
   transition: $transition-fast;
   margin: 0 0 0 10px;
   align-self: center;
+
+  @media (max-width: 520px) {
+    position: absolute;
+    top: 59px;
+    left: 75px;
+    color:#e6e6e6;
+  }
 }
 
 .dark-theme .header__change-theme-button {
@@ -178,6 +197,10 @@
 
 .dark-theme .sale .container {
   background-color: #186f5d;
+
+  @media (max-width: 510px) {
+    background-color: hsl(0deg, 0%, 79.2%);
+  }
 }
 
 .dark-theme .sale__item {
@@ -213,4 +236,14 @@
 
 .dark-theme .hero__title span {
   border: 1px solid #c3cec3;
+}
+
+.dark-theme .advantages__card {
+  @media (max-width: 474px) {
+    background: #e6e6e6;
+  }
+}
+
+.dark-theme .steps__item-desc svg path {
+  fill: black;
 }
