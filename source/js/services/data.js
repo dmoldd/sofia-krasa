@@ -1,4 +1,4 @@
-const ITEMS_OF_GOODS = {
+const ITEMS_OF_SERVICES = {
   good1: {
     name: 'Контент-план тем для постов',
     price: '1000',
@@ -49,7 +49,7 @@ const ITEMS_OF_GOODS = {
   }  
 }
 
-const PACKS_OF_GOODS = {
+const PACKS_OF_SERVICES = {
   pack1: {
     name: 'Пакет "Под ключ"',
     price: '11 000',
@@ -75,3 +75,5 @@ const PACKS_OF_GOODS = {
     inner_text: ['Сценарий сторис + посты 12шт.', 'Ежедневные сторис и посты', 'Оформление ленты и сторис', 'Дублирование контента в ваши соцсети', '+ 1500 ₽', 'За каждую соцсеть к общей сумме ']
   }
 }
+
+export {ITEMS_OF_SERVICES, PACKS_OF_SERVICES}

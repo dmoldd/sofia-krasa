@@ -436,62 +436,6 @@
         <div class="container">
           <h2 class="services__title">Услуги</h2>
           <ul class="services__list">
-            <!-- <li class="services__item">
-              <img class="services__item-img" src="img/services/1.JPG" alt="Картинка">
-              <h3 class="services__item-title">Контент-план тем для постов</h3>
-              <p class="services__item-price">1000 ₽</p>
-              <p class="services__item-desc">12 тем c описанием методики</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/2.JPG" alt="Картинка">
-              <h3 class="services__item-title">Один тематический пост</h3>
-              <p class="services__item-price">500 ₽</p>
-              <p class="services__item-desc">Полное написание с учетом пользовательской конверсии</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/3.JPG" alt="Картинка">
-              <h3 class="services__item-title anvantages__item--new">Контент для сторис на месяц</h3>
-              <p class="services__item-price">6000 ₽</p>
-              <p class="services__item-desc">Подробная таблица с описанием что снимать и писать, когда и в каком виде</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/4.JPG" alt="Картинка">
-              <h3 class="services__item-title anvantages__item--new">Подбор актуальных рилс</h3>
-              <p class="services__item-price">1500 ₽</p>
-              <p class="services__item-desc">15 видео</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/5.JPG" alt="Картинка">
-              <h3 class="services__item-title">Рекламный прогрев</h3>
-              <p class="services__item-price">500 ₽</p>
-              <p class="services__item-desc">1 день</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/6.JPG" alt="Картинка">
-              <h3 class="services__item-title">Сторителлинг</h3>
-              <p class="services__item-price">500 ₽</p>
-              <p class="services__item-desc">1 день</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/7.JPG" alt="Картинка">
-              <h3 class="services__item-title">Кураторство</h3>
-              <p class="services__item-price">3000 ₽</p>
-              <p class="services__item-desc">Коррекция контента и рекомендации. 1 месяц</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li>
-            <li class="services__item">
-              <img class="services__item-img" src="img/services/8.JPG" alt="Картинка">
-              <h3 class="services__item-title anvantages__item--new">Личная консультация</h3>
-              <p class="services__item-price">1000 ₽</p>
-              <p class="services__item-desc">Консультация по составлению контент-стратегии</p>
-              <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
-            </li> -->
             <li class="services__price-item">
               <h3 class="services__price-title">Контент-план тем для постов</h3>
               <span>................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................</span>
@@ -744,6 +688,35 @@
           </ul>
         </div>
       </section>
+
+      <template class="template__service-item visually-hidden">
+        <li class="services__price-item">
+          <h3 class="services__price-title">Контент-план тем для постов</h3>
+          <span>................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................</span>
+          <p class="services__price-count">1000 ₽ /<br class="services__price-count--br"> 12 тем</p>
+        </li>
+      </template>
+
+      <template class="template__service-pack visually-hidden">
+        <li class="services__item services__item--pack">
+          <img class="services__item-img" src="img/services/8.JPG" alt="Картинка">
+          <div class="services__item-inner">
+            <h3 class="services__item-title anvantages__item--new">Пакет "Под ключ"</h3>
+            <p class="services__inner-text">12 постов</p>
+            <p class="services__inner-text">31 день контента для сторис</p>
+            <p class="services__inner-text">Подбор reals</p>
+            <p class="services__item-price">11 000 ₽ / месяц</p>
+          </div>
+          <div class="services__item-inner2">
+            <h3 class="services__item-title anvantages__item--new">Бонус</h3>
+            <p class="services__inner-text">План тем в подарок + рекомендации</p>
+            <p class="services__inner-text">Скидка на reals 55%</p>
+            <p class="services__inner-text">Личная консультация</p>
+            <a class="services__item-order-link" href="https://t.me/sofya_krasa">Заказать</a>
+          </div>
+        </li>
+      </template>
+      
     </main>
     <footer class="footer">
       <svg class="footer__border-top" width="100%" height="68" viewBox="0 0 1394 68" fill="none" xmlns="http://www.w3.org/2000/svg">
