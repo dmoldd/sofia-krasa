@@ -23,7 +23,6 @@ const changeThemeName = () => {
 const onChangeTheme = () => {
   pageBody.classList.toggle('dark-theme');
   changeThemeName();
-  console.log(themeName.textContent)
 };
 
 const regulateVisibilityThemeButton = () => {
