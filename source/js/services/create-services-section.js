@@ -12,7 +12,7 @@ const createItem = (itemName) => {
   } else {
     serviceElement.querySelector('.services__price-title').textContent = ITEMS_OF_SERVICES[itemName].name;
   }
-  serviceElement.querySelector('.services__price-count').textContent = `${ITEMS_OF_SERVICES[itemName].price} / ${ITEMS_OF_SERVICES[itemName].unit}`;
+  serviceElement.querySelector('.services__price-count').textContent = `${ITEMS_OF_SERVICES[itemName].price} ₽ / ${ITEMS_OF_SERVICES[itemName].unit}`;
   servicesContainer.appendChild(serviceElement);
 };
 
@@ -24,7 +24,7 @@ const createItems = () => {
 const createPack = (packName) => {
   const packElement = packTemplate.cloneNode(true);
   packElement.querySelector('.services__item-title').textContent = PACKS_OF_SERVICES[packName].name;
-  packElement.querySelector('.services__item-price').textContent = PACKS_OF_SERVICES[packName].price;
+  packElement.querySelector('.services__item-price').textContent = PACKS_OF_SERVICES[packName].price + ' ₽';
   
   for (let i = 0; i < PACKS_OF_SERVICES[packName].inner_text.length; i++) {
     const description = packElement.querySelector(`.services__inner-text[data-count="${i}"]`);
