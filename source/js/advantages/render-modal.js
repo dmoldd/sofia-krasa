@@ -1,8 +1,9 @@
+import {ADVANTAGES_ITEMS} from "./data.js";
+
 const seeMoreButtons = document.querySelectorAll('.advantages__see-more');
 const modal = document.querySelector('.advantages-modal');
 const modalCloseButton = document.querySelector('.advantages-modal__close-button');
-
-
+const backgroundPage = document.querySelector('.page');
 
 const showModal = () => {
   modal.classList.remove('visually-hidden');
@@ -28,8 +29,6 @@ const renderModal = () => {
     button.addEventListener('click', onSeeMoreButtonClick)
   }
 }
-
-
 
 
 export {renderModal};
