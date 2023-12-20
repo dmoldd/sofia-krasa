@@ -14,7 +14,7 @@
   .container {
     display: grid;
     grid-template-columns: 41% 59%;
-    grid-template-rows: 50px 250px;
+    grid-template-rows: 10px 290px;
     row-gap: 50px;
     grid-template-areas: "img title" "img description";
     padding: 0;
@@ -64,6 +64,7 @@
 .advantages-modal__text {
   grid-area: description;
   margin: 20px 0 0 20px;
+  padding: 0 20px 0 0;
 }
 
 .advantages-modal__link {

@@ -3016,7 +3016,7 @@ button.faq__question-title.is-opened::after {
 .advantages-modal .container {
   display: grid;
   grid-template-columns: 41% 59%;
-  grid-template-rows: 50px 250px;
+  grid-template-rows: 10px 290px;
   row-gap: 50px;
   grid-template-areas: "img title" "img description";
   padding: 0;
@@ -3060,6 +3060,7 @@ button.faq__question-title.is-opened::after {
 .advantages-modal__text {
   grid-area: description;
   margin: 20px 0 0 20px;
+  padding: 0 20px 0 0;
 }
 
 .advantages-modal__title {
@@ -3324,5 +3325,14 @@ button.faq__question-title.is-opened::after {
 
 .dark-theme .steps__item-desc svg path {
   fill: black;
+}
+
+.dark-theme .advantages-modal {
+  background-color: #93aa92;
+  border: 5px solid hsl(0deg, 0%, 55.7%);
+}
+
+.dark-theme .advantages-modal__close-button span {
+  background-color: rgb(74, 104, 98);
 }
 /*# sourceMappingURL=style.css.map */

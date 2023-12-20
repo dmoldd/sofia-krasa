@@ -247,3 +247,12 @@
 .dark-theme .steps__item-desc svg path {
   fill: black;
 }
+
+.dark-theme .advantages-modal {
+  background-color: #93aa92;
+  border: 5px solid hsl(0, 0%, 55.7%);
+}
+
+.dark-theme .advantages-modal__close-button span {
+  background-color: rgb(74, 104, 98);
+}
