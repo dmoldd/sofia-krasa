@@ -9,6 +9,7 @@ const createItem = (itemName) => {
   const description = serviceElement.querySelector('span');
   if (ITEMS_OF_SERVICES[itemName].description !== null) {
     description.textContent = ITEMS_OF_SERVICES[itemName].description;
+    serviceElement.classList.add('services__price-item--large')
   } else {
     serviceElement.querySelector('.services__price-title').textContent = ITEMS_OF_SERVICES[itemName].name;
   }
